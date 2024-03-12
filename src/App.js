@@ -1,27 +1,37 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
 import MoviesArrayRender from './features/Brain/MoviesBrain';
-
+import Home from './pages/Home';
+import LiveGlobe from './pages/LiveGlobe';
+import LiveTV from './pages/LiveTV';
+import Movies from './pages/Movies';
 import './App.css';
 import ChannelsArrayRender from './features/Brain/ChannelsBrain';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
     
+    <Router> {/* Wrap your Routes within Router */}
+      <div className="App">
+        <Header />
+        
+        {/* <MoviesArrayRender /> */}
+        {/* <ChannelsArrayRender /> */}
+        </div>
+        <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="movies" element={<Movies />} />
+          <Route path="liveTV" element={<LiveTV />} />
+          <Route path="liveGlobe" element={<LiveGlobe />} />
+          {/* <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} /> */}
+        </Routes>
       
-      {/* <MoviesArrayRender /> */}
-      <ChannelsArrayRender />
-      
-      {/* Uncomment below to enable routes */}
-      {/* <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="Movies" element={<Movies />} />
-        <Route path="LiveTV" element={<LiveTV />} />
-        <Route path="LiveGlobe" element={<LiveGlobe />} />
-        <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} />
-      </Routes> */}
-    </div>
+    </Router>
+ 
   );
 }
 

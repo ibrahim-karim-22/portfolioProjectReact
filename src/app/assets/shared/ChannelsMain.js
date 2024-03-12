@@ -91,32 +91,7 @@ export const Channels = [
             ></iframe>
         )
     },
-    {
-        id: 4,
-        name: 'ABC News',
-        language: ['English'],
-        description:`ABC News is a prominent American news organization known for its comprehensive coverage of 
-                    national and international news, politics, business, technology, entertainment, and more. As one of the major 
-                    news divisions of the American Broadcasting Company (ABC), it provides breaking news updates, investigative reports, 
-                    and analysis across various platforms, including television, radio, and digital media. ABC News produces several flagship 
-                    programs such as "Good Morning America," "World News Tonight with David Muir," and "Nightline," which are widely watched by 
-                    audiences across the United States. Known for its journalistic integrity and commitment to factual reporting, ABC News has earned
-                    a reputation as a trusted source for news and information. It covers a wide range of topics, aiming to keep its audience informed 
-                    and engaged with the most significant events shaping the world.`,
-        genre: ['News'],
-        poster: "https://www.hollywoodreporter.com/wp-content/uploads/2023/09/ABCNEWS_LIVE_VERTICAL_KEYART_New_090723_crop-copy.jpg?w=1296",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3" 
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
-    },
+   
     {
         id: 5,
         name: 'NBC News',
@@ -385,9 +360,35 @@ export const Channels = [
         genre: ['News'],
         poster: "https://m.media-amazon.com/images/I/91KefeYB9-L.png",
         channel: "http://www.freeintertv.com/externals/showlive/?ch=Y25uX2NsYXA=",
-        // video: "http://www.freeintertv.com/externals/showlive/?ch=Y25uX2NsYXA="
+
         
        
         
+    },
+    {
+        id: 16,
+        name: 'ABC News',
+        language: ['English'],
+        description:`ABC News is a prominent American news organization known for its comprehensive coverage of 
+                    national and international news, politics, business, technology, entertainment, and more. As one of the major 
+                    news divisions of the American Broadcasting Company (ABC), it provides breaking news updates, investigative reports, 
+                    and analysis across various platforms, including television, radio, and digital media. ABC News produces several flagship 
+                    programs such as "Good Morning America," "World News Tonight with David Muir," and "Nightline," which are widely watched by 
+                    audiences across the United States. Known for its journalistic integrity and commitment to factual reporting, ABC News has earned
+                    a reputation as a trusted source for news and information. It covers a wide range of topics, aiming to keep its audience informed 
+                    and engaged with the most significant events shaping the world.`,
+        genre: ['News'],
+        poster: "https://www.hollywoodreporter.com/wp-content/uploads/2023/09/ABCNEWS_LIVE_VERTICAL_KEYART_New_090723_crop-copy.jpg?w=1296",
+        channel: (
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3" 
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+            ></iframe>
+        )
     },
 ]
