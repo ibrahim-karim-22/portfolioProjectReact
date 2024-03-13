@@ -48,8 +48,11 @@ const Header = () => {
                     </NavItem>
                 </Nav>
             </Collapse>
+            <div className="you">YOU</div>
             <img className="tv" src={untitled4} alt="Untitled" />
+            <div className="are">ARE</div>
             <img className="lamp1" src={untitled3} alt="Untitled" />
+            <div className="beautiful">BEAUTIFUL</div>
             <img className="couch " src={untitled2} alt="Untitled" />
         </Navbar>
     )
