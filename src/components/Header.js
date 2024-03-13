@@ -7,41 +7,50 @@ import { Navbar,
          NavItem
     } from "reactstrap";
 import { NavLink } from 'react-router-dom'
+import  untitled from '../app/assets/images/untitled.png';
+import untitled2 from '../app/assets/images/untitled2.png';
+import untitled3 from '../app/assets/images/untitled3.png';
+import untitled4 from '../app/assets/images/untitled4.png';
+
 
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='md'>
+        <Navbar dark color='warning' sticky='top' expand='lg'>
             <NavbarBrand className='ms-0' href='/'>
-                <h1 className='mt-1'>KRISPY</h1>
+    
+            <img className="titleImg" src={untitled} alt="Untitled" />
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
-                <Nav className='ms-auto' navbar>
+                <Nav navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                           <h3 className="homeNavBtn">Home</h3>
+                           <h3 className="homeNavBtn ms-5">Home</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/movies'>
-                            <i className='fa fa-list fa-lg' /> movies
+                        <h3 className="homeNavBtn ms-5">Movies</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/livetv'>
-                            <i className='fa fa-info fa-lg' /> Live TV
+                        <h3 className="homeNavBtn ms-5">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/liveglobe'>
-                            <i className='fa fa-address-card fa-lg' /> Globe
+                        <h3 className="homeNavBtn ms-5">Globe</h3>
                         </NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
+            <img className="tv" src={untitled4} alt="Untitled" />
+            <img className="lamp1" src={untitled3} alt="Untitled" />
+            <img className="couch " src={untitled2} alt="Untitled" />
         </Navbar>
     )
 }
