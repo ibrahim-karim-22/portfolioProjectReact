@@ -172,27 +172,6 @@ export const MoviesArr = [
         ]
     },
     {
-        id: 9,
-        name: "A Jitney Elopement",
-        year: 1915,
-        video: "https://publicdomainmovie.net/movie.php?id=AJitneyElopement&type=.mp4",
-        director: "Charlie Chaplin",
-        genre: ["Comedy", "Short"],
-        cast: ["Charlie Chaplin", "Edna Purviance", "Ernest Van Pelt"],
-        plot: "In 'A Jitney Elopement,' Charlie Chaplin plays a groom who elopes with his bride in a borrowed car, leading to a series of comic misadventures.",
-        duration: '26:00',
-        poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/A_Jitney_Elopement_%28poster%29.jpg/220px-A_Jitney_Elopement_%28poster%29.jpg",
-        shootingLocations: ["Los Angeles, California, USA"],
-        releaseDate: "April 1, 1915",
-        trivia: [
-            "This film features Chaplin's signature humor and physical comedy, as well as his romantic interest, Edna Purviance.",
-            "The movie is notable for its use of slapstick comedy and clever visual gags.",
-            "Chaplin's character faces numerous obstacles during the elopement, providing plenty of opportunities for comedic situations.",
-            "In one scene, the car's license plate changes from one shot to another.",
-            "There's a continuity error in the scene where Chaplin's character spills coffee on his shirt; the stain disappears and reappears throughout the scene."
-        ],
-    },
-    {
         id: 10,
         name: "A Night Out",
         year: 1915,
@@ -325,25 +304,6 @@ export const MoviesArr = [
             "This film showcases Chaplin's compassion for human struggles and his ability to find humor in difficult situations.",
             "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes involving mistaken identities and romantic pursuits."
-        ]
-    },
-    {
-        id: 16,
-        name: "The Pawnshop",
-        year: 1916,
-        video: "https://publicdomainmovie.net/movie.php?id=ThePawnshop1916&type=.m",
-        director: "Charlie Chaplin",
-        genre: ["Comedy"],
-        cast: ["Charlie Chaplin", "Edna Purviance", "Henry Bergman"],
-        plot: "In 'The Pawnshop,' Charlie Chaplin plays an employee at a pawnshop who gets into humorous situations with customers and his boss.",
-        duration: '25:00',
-        poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%27The_Pawnshop%27.jpg/220px-%27The_Pawnshop%27.jpg",
-        shootingLocations: ["Los Angeles, California, USA"],
-        releaseDate: "October 2, 1916",
-        trivia: [
-            "This film showcases Chaplin's physical comedy skills, with several memorable scenes involving the chaotic environment of a pawnshop.",
-            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period.",
-            "The movie features Chaplin's signature style of humor, with clever visual gags and slapstick comedy."
         ]
     },
     {
@@ -534,25 +494,6 @@ export const MoviesArr = [
             "This film features Charlie Chaplin in a cameo role as a waiter, marking one of his early appearances in a supporting role.",
             "Mabel Normand, who directed and starred in the film, was one of the leading comedic actresses of the silent film era.",
             "The movie combines elements of slapstick comedy and social satire, with Chaplin's brief appearance adding to the comedic antics."
-        ]
-    },
-    {
-        id: 27,
-        name: "Tillie's Punctured Romance",
-        year: 1914,
-        video: "https://publicdomainmovie.net/movie.php?id=CC_1914_11_14_TilliesPuncturedRomance&type=.mp4",
-        director: "Mack Sennett",
-        genre: ["Comedy", "Romance"],
-        cast: ["Marie Dressler", "Mabel Normand", "Charlie Chaplin"],
-        plot: "In 'Tillie's Punctured Romance,' a naive country girl named Tillie is duped by a city slicker into a fraudulent marriage, leading to comedic misadventures.",
-        duration: '73:00',
-        poster: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Tillie%27s_Punctured_Romance_%281914_film%29_%28DVD_box_art%29.jpg/220px-Tillie%27s_Punctured_Romance_%281914_film%29_%28DVD_box_art%29.jpg",
-        shootingLocations: ["Los Angeles, California, USA"],
-        releaseDate: "December 21, 1914",
-        trivia: [
-            "This film is considered the first feature-length comedy film ever made.",
-            "It features Charlie Chaplin in his first feature film role, portraying a supporting character named Charlie.",
-            "Marie Dressler, who plays Tillie, was a renowned stage and screen actress known for her comedic talents."
         ]
     },
     {
@@ -915,50 +856,65 @@ export const MoviesArr = [
             "Edna Purviance and Eric Campbell, who appear in the film, were frequent collaborators with Chaplin.",
             "The movie features Chaplin's trademark humor and satire, with memorable scenes set in a bustling roller rink."
         ]
+    },
+    {
+        id: 46,
+        name: "Tillie's Punctured Romance",
+        year: 1914,
+        video: "https://publicdomainmovie.net/movie.php?id=CC_1914_11_14_TilliesPuncturedRomance&type=.mp4",
+        director: "Mack Sennett",
+        genre: ["Comedy", "Romance"],
+        cast: ["Marie Dressler", "Mabel Normand", "Charlie Chaplin"],
+        plot: "In 'Tillie's Punctured Romance,' a naive country girl named Tillie is duped by a city slicker into a fraudulent marriage, leading to comedic misadventures.",
+        duration: '73:00',
+        poster: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Tillie%27s_Punctured_Romance_%281914_film%29_%28DVD_box_art%29.jpg/220px-Tillie%27s_Punctured_Romance_%281914_film%29_%28DVD_box_art%29.jpg",
+        shootingLocations: ["Los Angeles, California, USA"],
+        releaseDate: "December 21, 1914",
+        trivia: [
+            "This film is considered the first feature-length comedy film ever made.",
+            "It features Charlie Chaplin in his first feature film role, portraying a supporting character named Charlie.",
+            "Marie Dressler, who plays Tillie, was a renowned stage and screen actress known for her comedic talents."
+        ]
+    },
+    {
+        id: 47,
+        name: "A Jitney Elopement",
+        year: 1915,
+        video: "https://publicdomainmovie.net/movie.php?id=AJitneyElopement&type=.mp4",
+        director: "Charlie Chaplin",
+        genre: ["Comedy", "Short"],
+        cast: ["Charlie Chaplin", "Edna Purviance", "Ernest Van Pelt"],
+        plot: "In 'A Jitney Elopement,' Charlie Chaplin plays a groom who elopes with his bride in a borrowed car, leading to a series of comic misadventures.",
+        duration: '26:00',
+        poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/A_Jitney_Elopement_%28poster%29.jpg/220px-A_Jitney_Elopement_%28poster%29.jpg",
+        shootingLocations: ["Los Angeles, California, USA"],
+        releaseDate: "April 1, 1915",
+        trivia: [
+            "This film features Chaplin's signature humor and physical comedy, as well as his romantic interest, Edna Purviance.",
+            "The movie is notable for its use of slapstick comedy and clever visual gags.",
+            "Chaplin's character faces numerous obstacles during the elopement, providing plenty of opportunities for comedic situations.",
+            "In one scene, the car's license plate changes from one shot to another.",
+            "There's a continuity error in the scene where Chaplin's character spills coffee on his shirt; the stain disappears and reappears throughout the scene."
+        ],
+    },
+    {
+        id: 48,
+        name: "The Pawnshop",
+        year: 1916,
+        video: "https://publicdomainmovie.net/movie.php?id=ThePawnshop1916&type=.m",
+        director: "Charlie Chaplin",
+        genre: ["Comedy"],
+        cast: ["Charlie Chaplin", "Edna Purviance", "Henry Bergman"],
+        plot: "In 'The Pawnshop,' Charlie Chaplin plays an employee at a pawnshop who gets into humorous situations with customers and his boss.",
+        duration: '25:00',
+        poster: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%27The_Pawnshop%27.jpg/220px-%27The_Pawnshop%27.jpg",
+        shootingLocations: ["Los Angeles, California, USA"],
+        releaseDate: "October 2, 1916",
+        trivia: [
+            "This film showcases Chaplin's physical comedy skills, with several memorable scenes involving the chaotic environment of a pawnshop.",
+            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "The movie features Chaplin's signature style of humor, with clever visual gags and slapstick comedy."
+        ]
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
 ];

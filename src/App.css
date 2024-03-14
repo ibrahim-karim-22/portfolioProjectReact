@@ -1,5 +1,16 @@
+@media screen and (max-width: 1300px) {
+    .you, .are, .beautiful, .couch, .lamp1, .tv {
+        display: none;
+    }
+}
+
+
+
+
 body {
-    background-color: rgb(0, 0, 0);
+    background-image: url(https://images.wallpaperscraft.com/image/single/rose_buds_bush_124960_3840x2400.jpg);
+   
+    background-size: cover;
 }
 .homeNavBtn {
     display: block;
@@ -54,15 +65,16 @@ body {
 .you {
     font-size: 22px;
     position: relative;
-    color: aliceblue;
+    color: rgb(255, 0, 0);
+    text-shadow: black 1px 1px 1px;
     left: 255px;
     
 }
 .beautiful {
     font-size: 11px;
     position: relative;
-    color: rgb(255, 255, 255);
-    text-shadow: rgb(255, 0, 0) 1px 1px 11px;
+    color: rgb(255, 0, 0);
+    text-shadow: black 1px 1px 1px;
     left: 11px;
     z-index: -1;
 }
@@ -91,7 +103,8 @@ body {
 .are {
     font-size: 22px;
     position: relative;
-    color: aliceblue;
+    color: rgb(255, 0, 0);
+    text-shadow: black 1px 1px 1px;
     left: 145px;
 }
 .tv {
@@ -106,8 +119,44 @@ body {
 /* .movies-container {
     width: 200px;
 } */
+.channelsPosterSize {
+    width: 300px;
+    margin-left: 4%;
+    margin-right: auto;
+}
 .moviesPosterSize {
     width: 300px;
-    margin-left: 44px;
-    margin-top: 33px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.moviesPosterSize {
+    border-color: rgb(233, 100, 200);
+    border-style: groove;
+    transition: transform 5s ease;
+}
+.moviesPosterSize:hover {
+    border-color: rgb(0, 0, 0);
+    transition-duration: 2s;
+    transform: rotate(2deg);
+}
+.channelsPosterSize {
+    border-color: rgb(233, 100, 200);
+    border-style: groove;
+    transition: transform 5s ease;
+}
+.channelsPosterSize:hover {
+    border-color: rgb(0, 0, 0);
+    transform: rotate(2deg);
+}
+.movies-carousel-item {
+    width: 333px;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+.featured {
+    color: white;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 55px;
 }
