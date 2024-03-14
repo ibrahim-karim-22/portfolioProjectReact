@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="theFooter bg-warning">
+        <footer className="theFooter ">
             <Container>
                 <Row>
       

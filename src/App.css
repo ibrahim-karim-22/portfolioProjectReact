@@ -27,21 +27,21 @@ body {
     width: 444px;
 }
 .titleImg {
-    transition: transform 0.5s ease; /* Add transition for smooth effect */
+    transition: transform 0.5s ease; 
 }
 
 .titleImg:hover {
-    transform: rotate(5deg); /* Tilt right on hover */
+    transform: rotate(5deg);
     
 }
 .homeNavBtn {
-    color: black; /* Default color */
-    transition: color 0.3s ease; /* Add transition for smooth color change */
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease; 
 
 }
 
 .homeNavBtn:hover {
-    color: rgb(255, 255, 255); /* Change to red on hover */
+    color: pink; 
 }
 .homeNavBtn {
     font-family: "Kode Mono", monospace;
@@ -56,6 +56,7 @@ body {
 .theFooter {
     padding: 122px;
     margin-top: 0rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .copyright {
     font-size: 18px;
@@ -65,18 +66,22 @@ body {
 .you {
     font-size: 22px;
     position: relative;
-    color: rgb(255, 0, 0);
+    color:pink;
     text-shadow: black 1px 1px 1px;
     left: 255px;
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
     
 }
 .beautiful {
     font-size: 11px;
     position: relative;
-    color: rgb(255, 0, 0);
+    color:pink;
     text-shadow: black 1px 1px 1px;
     left: 11px;
     z-index: -1;
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
 }
 .couch {
     width: 222px;
@@ -103,9 +108,11 @@ body {
 .are {
     font-size: 22px;
     position: relative;
-    color: rgb(255, 0, 0);
+    color:pink;
     text-shadow: black 1px 1px 1px;
     left: 145px;
+    font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
 }
 .tv {
     width: 222px;
@@ -159,4 +166,12 @@ body {
     text-align: center;
     margin-top: 55px;
     margin-bottom: 55px;
+}
+p {
+    color: white;
+}
+.display-movie {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

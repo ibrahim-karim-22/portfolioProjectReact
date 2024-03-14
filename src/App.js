@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import LiveGlobe from './pages/LiveGlobe';
 import LiveTV from './pages/LiveTV';
 import Movies from './pages/Movies';
+import DisplayMovie from './features/Brain/DisplayMovie';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies" element={<Movies />} /> {/* Render Movies component for /movies */}
+          <Route path="/movie/:id" element={<DisplayMovie />} />
           <Route path="/liveTV" element={<LiveTV />} />
           <Route path="/liveGlobe" element={<LiveGlobe />} />
           {/* <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} /> */}

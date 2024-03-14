@@ -10,7 +10,7 @@ const LiveTV = () => {
                 <Col>
                     <div className="movies-container"> {/* Same class name as the example */}
                         {Channels.map(channel => (
-                            <Link to={`/livetv/${channel.name}`} key={channel.id} className="movie-poster"> {/* Same class name as the example */}
+                            <Link to={`/channel/${channel.id}`} key={channel.id}>
                                 <img className='channelsPosterSize mt-5 me-5' src={channel.poster} alt={channel.title} /> {/* Same class name as the example */}
                             </Link>
                         ))}
