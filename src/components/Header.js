@@ -11,6 +11,8 @@ import  untitled from '../app/assets/images/untitled.png';
 import untitled2 from '../app/assets/images/untitled2.png';
 import untitled3 from '../app/assets/images/untitled3.png';
 import untitled4 from '../app/assets/images/untitled4.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -28,22 +30,23 @@ const Header = () => {
                 <Nav navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                           <h3 className="homeNavBtn ms-5">Home</h3>
+                           <h3 className="homeNavBtn ms-5">Home<FontAwesomeIcon icon={faStar}/></h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/movies'>
-                        <h3 className="homeNavBtn ms-5">Movies</h3>
+                       
+                        <h3 className="homeNavBtn ms-5">Movies<FontAwesomeIcon icon={faStar}/> </h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/livetv'>
-                        <h3 className="homeNavBtn ms-5">TV</h3>
+                        <h3 className="homeNavBtn ms-5">TV<FontAwesomeIcon icon={faStar}/></h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/liveglobe'>
-                        <h3 className="homeNavBtn ms-5">Globe</h3>
+                        <h3 className="homeNavBtn ms-5">Globe<FontAwesomeIcon icon={faStar}/></h3>
                         </NavLink>
                     </NavItem>
                 </Nav>

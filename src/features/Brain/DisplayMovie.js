@@ -25,7 +25,7 @@ const DisplayMovie = () => {
                     <img className='moviesPosterSize' src={movie.poster} alt={movie.title} />
                 </Col>
                 <Col md='3'>
-                  <p>Plot: <br/>{movie.plot}</p>
+                  <p>Release Date: <br/> {movie.year} <br/> Plot: <br/>{movie.plot}</p>
                 </Col>
                 <Col md='3'>
                   <p>Trivia: <br/>{movie.trivia}</p>

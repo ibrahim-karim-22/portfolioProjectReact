@@ -15,6 +15,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} /> {/* Render Movies component for /movies */}
@@ -22,6 +23,7 @@ function App() {
           <Route path="/liveTV" element={<LiveTV />} />
           <Route path="/liveGlobe" element={<LiveGlobe />} />
           {/* <Route path="directory/:campsiteId" element={<CampsiteDetailPage />} /> */}
+          
         </Routes>
         <Footer />
       </div>

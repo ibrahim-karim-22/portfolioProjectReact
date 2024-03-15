@@ -14,7 +14,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/BJ3Yv572V1A?si=fIbctbLE9dCsrh8m"
+                src="https://www.youtube.com/embed/BJ3Yv572V1A?si=fIbctbLE9dCsrh8m&autoplay=1&mute=1"
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -34,7 +34,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/O6Qdxrf-6CM?si=lAu0KEQs23H_e0E5" 
+                src="https://www.youtube.com/embed/O6Qdxrf-6CM?si=lAu0KEQs23H_e0E5&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -60,7 +60,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Fjp2TdlTTIU?si=4i-PG9raF8nGv6O1" 
+                src="https://www.youtube.com/embed/Fjp2TdlTTIU?si=4i-PG9raF8nGv6O1&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -83,7 +83,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/pqabxBKzZ6M?si=YGuHe01-wO7YGB7U" 
+                src="https://www.youtube.com/embed/pqabxBKzZ6M?si=YGuHe01-wO7YGB7U&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -109,7 +109,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/EYnUwQC-LcM?si=IaqjHlXa8F-cBBZS" 
+                src="https://www.youtube.com/embed/EYnUwQC-LcM?si=IaqjHlXa8F-cBBZS&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -129,7 +129,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/WFDbJY0eBGI?si=IOmXr1d235YevV18" 
+                src="https://www.youtube.com/embed/WFDbJY0eBGI?si=IOmXr1d235YevV18&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -153,7 +153,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH" 
+                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -178,7 +178,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH" 
+                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -202,7 +202,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Qu7LseFrBJ4?si=68dxO-zvSWMoXEFh" 
+                src="https://www.youtube.com/embed/Qu7LseFrBJ4?si=68dxO-zvSWMoXEFh&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -227,7 +227,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/bNyUyrR0PHo?si=hkYdkA_FW8DBMPia" 
+                src="https://www.youtube.com/embed/bNyUyrR0PHo?si=hkYdkA_FW8DBMPia&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -252,7 +252,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/BKXyGQtyECo?si=LNjxmreJ88MSGeL7" 
+                src="https://www.youtube.com/embed/BKXyGQtyECo?si=LNjxmreJ88MSGeL7&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -279,7 +279,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/w9uJg68CV4g?si=NYsrf-It_LV8k8yV" 
+                src="https://www.youtube.com/embed/w9uJg68CV4g?si=NYsrf-It_LV8k8yV&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -307,7 +307,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/21X5lGlDOfg?si=Ip71pQ-CJeRDmrRX" 
+                src="https://www.youtube.com/embed/21X5lGlDOfg?si=Ip71pQ-CJeRDmrRX&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -335,7 +335,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/pykpO5kQJ98?si=Nw2HQtUt1_yGC8y2" 
+                src="https://www.youtube.com/embed/pykpO5kQJ98?si=Nw2HQtUt1_yGC8y2&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -345,28 +345,6 @@ export const Channels = [
     },
     {
         id: 15,
-        name: 'CNN',
-        language: ['English'],
-        description:`Euronews is a leading international news channel headquartered in Lyon, France, with additional offices and studios across Europe.
-                    It provides 24/7 coverage of global news, current affairs, politics, business, culture, sports, and more. Euronews aims to offer 
-                    a diverse range of perspectives on world events, reflecting the multicultural and multinational nature of Europe. The channel delivers
-                    news in multiple languages, including English, French, German, Spanish, Italian, Portuguese, Russian, Arabic, and others, making it
-                    accessible to a broad international audience. Euronews is known for its objective reporting, in-depth analysis, and commitment to 
-                    providing accurate and balanced coverage of global developments. With a team of correspondents stationed around the world, Euronews
-                    delivers timely news updates and insightful reporting on a wide range of topics, serving as a trusted source of information for viewers
-                    across Europe and beyond.`,
-        
-       
-        genre: ['News'],
-        poster: "https://m.media-amazon.com/images/I/91KefeYB9-L.png",
-        channel: "http://www.freeintertv.com/externals/showlive/?ch=Y25uX2NsYXA=",
-
-        
-       
-        
-    },
-    {
-        id: 16,
         name: 'ABC News',
         language: ['English'],
         description:`ABC News is a prominent American news organization known for its comprehensive coverage of 
@@ -383,7 +361,7 @@ export const Channels = [
             <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3" 
+                src="https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3&autoplay=1&mute=1" 
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -46,7 +46,7 @@ body {
 .homeNavBtn {
     font-family: "Kode Mono", monospace;
   font-optical-sizing: auto;
- font-size: 33px 0.3s ease;
+ font-size: 11px 0.3s ease;
 }
 .homeNavBtn:hover {
     transform: rotate(1deg); 
@@ -68,17 +68,19 @@ body {
     position: relative;
     color:pink;
     text-shadow: black 1px 1px 1px;
-    left: 255px;
+    left: 244px;
     font-family: "Caveat", cursive;
   font-optical-sizing: auto;
     
 }
 .beautiful {
-    font-size: 11px;
+    font-size: 15px;
     position: relative;
     color:pink;
     text-shadow: black 1px 1px 1px;
-    left: 11px;
+    left: 22px;
+    top: 15px;
+    rotate: 23deg;
     z-index: -1;
     font-family: "Caveat", cursive;
   font-optical-sizing: auto;
@@ -110,7 +112,7 @@ body {
     position: relative;
     color:pink;
     text-shadow: black 1px 1px 1px;
-    left: 145px;
+    left: 126px;
     font-family: "Caveat", cursive;
   font-optical-sizing: auto;
 }
@@ -175,3 +177,48 @@ p {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+.tv-guide-section {
+    padding: 20px;
+}
+
+.tv-guide-scrollable-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.tv-guide-scrollable-container > * {
+    flex: 0 0 auto;
+    margin-right: 1px; 
+    width: 370px;
+    height: 240px;
+}
+.channel-display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.channels-text {
+    color: aliceblue;
+}
+.movie-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .favorite-icon {
+    position: absolute;
+    top: 77px;
+    right: 55px;
+    color: gold; /* Customize the color of the star icon */
+    cursor: pointer;
+    font-size: 44px;
+  }
+  .favorite-icon:hover {
+    color: rgb(112, 112, 112);
+  }
+  
+  .favorite {
+    color: gold; /* Customize the color of the star icon when it's favorited */
+  }
