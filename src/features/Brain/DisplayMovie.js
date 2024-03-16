@@ -1,12 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { MoviesArr } from "../../app/assets/shared/MoviesMain";
-import { Container, Row, Col } from 'reactstrap'; // Assuming you're using Reactstrap
+import { Container, Row, Col } from 'reactstrap'; 
 
 const DisplayMovie = () => {
     const { id } = useParams();
 
-    // Find the movie with the matching ID from the MoviesArr array
+  
     const movie = MoviesArr.find(movie => movie.id === parseInt(id));
 
     if (!movie) {
