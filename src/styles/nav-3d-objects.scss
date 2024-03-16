@@ -1,0 +1,58 @@
+.you {
+  font-size: 22px;
+  position: relative;
+  color: pink;
+  text-shadow: black 1px 1px 1px;
+  left: 244px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+.beautiful {
+  font-size: 15px;
+  position: relative;
+  color: pink;
+  text-shadow: black 1px 1px 1px;
+  left: 22px;
+  top: 15px;
+  rotate: 23deg;
+  z-index: -1;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+.couch {
+  width: 222px;
+  margin-left: -66px;
+}
+.couch {
+  /* transform: rotate(90deg);  */
+  transition: transform 2s ease;
+}
+.couch:hover {
+  transform: rotate(360deg);
+}
+
+.lamp1 {
+  width: 222px;
+  transform: translateY(-44px);
+  transition: transform 0.7s ease;
+}
+.lamp1:hover {
+  transform: rotate(1deg);
+}
+.are {
+  font-size: 22px;
+  position: relative;
+  color: pink;
+  text-shadow: black 1px 1px 1px;
+  left: 126px;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+.tv {
+  width: 222px;
+  transform: translateX(122px);
+  transition: transform 3s ease;
+}
+.tv:hover {
+  transform: rotate(77deg);
+}

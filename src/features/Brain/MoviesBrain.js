@@ -14,7 +14,6 @@ const MoviesArrayRender = () => {
             <source src={movie.video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          {/* Display other movie details here */}
           <p>Director: {movie.director}</p>
           <p>Genre: {movie.genre.join(', ')}</p>
           <p>Cast: {movie.cast.join(', ')}</p>

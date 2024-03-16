@@ -3,10 +3,10 @@ import { Channels } from '../../app/assets/shared/ChannelsMain';
 import { Container, Row, Col } from 'reactstrap';
 
 const DisplayTV = () => {
-    const [selectedChannel, setSelectedChannel] = useState(Channels[0]); 
+    const [selectedChannel, setSelectedChannel] = useState(Channels[0]);
 
     const handleChannelClick = (channel) => {
-        setSelectedChannel(channel); 
+        setSelectedChannel(channel);
     };
 
     return (
@@ -32,11 +32,11 @@ const DisplayTV = () => {
                             {Channels.map(channel => (
                                 <img
                                     key={channel.id}
-                                    className='channelsPosterSize mt-5 '
+                                    className='channel-poster-size mt-5 '
                                     src={channel.poster}
                                     alt={channel.title}
-                                    onClick={() => handleChannelClick(channel)} // Handle click event to update selected channel
-                                    style={{ cursor: 'pointer' }} // Add pointer cursor to indicate clickability
+                                    onClick={() => handleChannelClick(channel)}
+                                    style={{ cursor: 'pointer' }}
                                 />
                             ))}
                         </div>

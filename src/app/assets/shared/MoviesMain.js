@@ -8,7 +8,7 @@ export const MoviesArr = [
         genre: ["Comedy"],
         cast: ["Charlie Chaplin - Drunk", "Albert Austin - Taxi driver"],
         plot: "A drunken man struggles to find his way home after a night of revelry.",
-        duration: '21:30', // Duration in minutes
+        duration: '21:30',
         poster: "https://upload.wikimedia.org/wikipedia/commons/f/fa/One_A.M._poster.jpg",
         shootingLocations: ["Charlie Chaplin Studios, Hollywood, California, USA"],
         releaseDate: "August 7, 1916",
@@ -28,7 +28,7 @@ export const MoviesArr = [
         genre: ["Comedy"],
         cast: ["Charlie Chaplin"],
         plot: "In this short film, Charlie Chaplin plays his iconic character, the Tramp, who unintentionally becomes the center of attention at a children's auto race in Venice, California.",
-        duration: '6:17', // Duration in minutes
+        duration: '6:17',
         poster: "https://upload.wikimedia.org/wikipedia/commons/4/4f/CC_Kid_Auto_Races_at_Venice_1914_%28poster%29.jpg",
         shootingLocations: ["Venice, California, USA"],
         releaseDate: "February 7, 1914",
@@ -47,7 +47,7 @@ export const MoviesArr = [
         genre: ["Comedy", "Drama", "Romance"],
         cast: ["Charlie Chaplin", "Edna Purviance", "Eric Campbell"],
         plot: "Charlie Chaplin plays a violinist who rescues a girl from a gypsy camp and falls in love with her, but she is eventually reclaimed by her previous suitor.",
-        duration: '24:00', // Duration in minutes
+        duration: '24:00',
         poster: "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11319539_p_v8_ab.jpg",
         shootingLocations: ["Niles Canyon, Fremont, California, USA"],
         releaseDate: "July 10, 1916",
@@ -916,5 +916,5 @@ export const MoviesArr = [
             "The movie features Chaplin's signature style of humor, with clever visual gags and slapstick comedy."
         ]
     }
-    
+
 ];

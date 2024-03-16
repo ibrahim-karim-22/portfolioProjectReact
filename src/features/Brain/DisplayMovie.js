@@ -22,29 +22,29 @@ const DisplayMovie = () => {
             </Row>
             <Row>
                 <Col md='3'>
-                    <img className='moviesPosterSize' src={movie.poster} alt={movie.title} />
+                    <img className='movies-poster-size' src={movie.poster} alt={movie.title} />
                 </Col>
                 <Col md='3'>
-                  <p>Release Date: <br/> {movie.year} <br/> Plot: <br/>{movie.plot}</p>
+                    <p>Release Date: <br /> {movie.year} <br /> Plot: <br />{movie.plot}</p>
                 </Col>
                 <Col md='3'>
-                  <p>Trivia: <br/>{movie.trivia}</p>
+                    <p>Trivia: <br />{movie.trivia}</p>
                 </Col>
                 <Col md='1'>
-                  <p>Director: {movie.director}</p>
+                    <p>Director: {movie.director}</p>
                 </Col>
                 <Col md='1'>
-                  <p>Duration: {movie.duration}</p>
+                    <p>Duration: {movie.duration}</p>
                 </Col>
                 <Col md='1'>
-                  <p>Cast <br/>{movie.cast}</p>
+                    <p>Cast <br />{movie.cast}</p>
                 </Col>
             </Row>
             <Row className='mt-5'>
                 <Col>
                     <video className='display-movie' width="1200" height="800" controls>
                         <source src={movie.video} type="video/mp4" />
-                        Your browser does not support the video tag.
+                        Your browser does not support this video type.
                     </video>
                 </Col>
             </Row>

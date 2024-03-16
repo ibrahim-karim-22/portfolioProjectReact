@@ -8,7 +8,7 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 
-// Array of movie IDs that you want to include in the carousel
+
 const selectedMovieIds = [1, 2, 3];
 
 function MoviesCarousel() {
@@ -32,7 +32,7 @@ function MoviesCarousel() {
     setActiveIndex(newIndex);
   };
 
-  // Filter MoviesArr based on selectedMovieIds
+
   const selectedMovies = MoviesArr.filter(movie => selectedMovieIds.includes(movie.id));
 
   const slides = selectedMovies.map((movie, index) => (
@@ -41,10 +41,10 @@ function MoviesCarousel() {
       onExited={() => setAnimating(false)}
       key={index}
     >
-      <img src={movie.poster} alt={movie.title} 
+      <img src={movie.poster} alt={movie.title}
         className="movies-carousel-item" />
       <CarouselCaption
-        
+
       />
     </CarouselItem>
   ));
@@ -67,14 +67,14 @@ function MoviesCarousel() {
         direction="prev"
         directionText="Previous"
         onClickHandler={previous}
-       className="prevArrow1"
+        className="prevArrow1"
       />
       <CarouselControl
         direction="next"
         directionText="Next"
         onClickHandler={next}
         className="nextArrow1"
-       
+
       />
     </Carousel>
   );
