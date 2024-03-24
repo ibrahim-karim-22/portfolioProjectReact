@@ -21,6 +21,7 @@ const UserLoginForm = () => {
     const dispatch = useDispatch();
 
     const handleLogin = (values) => {
+        console.log(values);
         const currentUser = {
             id: Date.now(),
             // avatar: defaultAvatar,
@@ -36,11 +37,11 @@ const UserLoginForm = () => {
             <span className="navbar-text ml-auto">
                 {currentUser ? (
                     <div style={{ width: "4rem", height: "4rem" }}>
-                        <img
+                        {/* <img
                             src={currentUser.avatar}
                             alt="user"
                             style={{ width: "100%", height: "100%" }}
-                        />
+                        /> */}
                     </div>
                 ) : (
                     <Button

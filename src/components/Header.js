@@ -62,6 +62,7 @@ const Header = () => {
             <img className="couch " src={untitled2} alt="Untitled" />
             <p className="favorites-count">3</p>
             </div>
+            <UserLoginForm />
         </Navbar>
     )
 }
