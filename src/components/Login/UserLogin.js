@@ -42,6 +42,7 @@ const UserLoginForm = () => {
                             alt="user"
                             style={{ width: "100%", height: "100%" }}
                         /> */}
+                        {currentUser.username}
                     </div>
                 ) : (
                     <Button
