@@ -16,7 +16,7 @@ const ChannelsList = () => {
                         {Channels.map(channel => (
                             <div key={channel.id} className="movie-item">
                                 <Link to={`/livetv/${channel.name}`}>
-                                    <img className='movies-poster-size mt-5 me-4' src={channel.poster} alt={channel.name} />
+                                    <img className='channels-poster-size mt-5 me-4' src={channel.poster} alt={channel.name} />
                                 </Link>
                                 {/* <FontAwesomeIcon icon={faStar} /> */}
                             </div>

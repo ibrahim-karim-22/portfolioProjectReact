@@ -32,7 +32,7 @@ const DisplayTV = () => {
                             {Channels.map(channel => (
                                 <img
                                     key={channel.id}
-                                    className='channel-poster-size mt-5 '
+                                    className='channels-poster-size-in-display mt-5 me-3 '
                                     src={channel.poster}
                                     alt={channel.title}
                                     onClick={() => handleChannelClick(channel)}

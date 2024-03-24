@@ -16,7 +16,9 @@ const Movies = () => {
                         {MoviesArr.map(movie => (
                             <div key={movie.id} className="movie-item">
                                 <Link to={`/movie/${movie.id}`}>
-                                    <img className='movies-poster-size mt-5 me-4' src={movie.poster} alt={movie.title} />
+                                    <div className='movie-overlay'>
+                                        <img className='movies-poster-size mt-5 me-4' src={movie.poster} alt={movie.title} />
+                                    </div>
                                 </Link>
                                 {/* <FontAwesomeIcon icon={faStar} /> */}
                             </div>
