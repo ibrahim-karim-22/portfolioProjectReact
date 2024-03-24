@@ -12,8 +12,10 @@ import untitled from '../app/assets/images/untitled.png';
 import untitled2 from '../app/assets/images/untitled2.png';
 import untitled3 from '../app/assets/images/untitled3.png';
 import untitled4 from '../app/assets/images/untitled4.png';
+import UserLoginForm from "./Login/UserLogin"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -52,12 +54,14 @@ const Header = () => {
                     </NavItem>
                 </Nav>
             </Collapse>
-            <div className="you">YOU</div>
+           
             <img className="tv" src={untitled4} alt="Untitled" />
-            <div className="are">ARE</div>
+            
             <img className="lamp1" src={untitled3} alt="Untitled" />
-            <div className="beautiful">BEAUTIFUL</div>
+            <div className="favrites-icon-main">
             <img className="couch " src={untitled2} alt="Untitled" />
+            <p className="favorites-count">3</p>
+            </div>
         </Navbar>
     )
 }

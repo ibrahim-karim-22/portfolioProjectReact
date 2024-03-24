@@ -22,7 +22,7 @@ const DisplayMovie = () => {
             </Row>
             <Row>
                 <Col md='3'>
-                    <img className='movies-poster-size' src={movie.poster} alt={movie.title} />
+                    <img className='movies-display-poster' src={movie.poster} alt={movie.title} />
                 </Col>
                 <Col md='3'>
                     <p>Release Date: <br /> {movie.year} <br /> Plot: <br />{movie.plot}</p>
