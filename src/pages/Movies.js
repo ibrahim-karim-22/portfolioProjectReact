@@ -1,4 +1,6 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { addToFavorites, removeFromFavorites } from '../components/favorites/favoritesSlice';
 import { Link } from 'react-router-dom';
 import { MoviesArr } from "../app/assets/shared/MoviesMain";
 import { Container, Row, Col } from 'reactstrap';
@@ -8,6 +10,23 @@ import Genre from '../features/Brain/genresToggle';
 
 
 const Movies = () => {
+    const dispatch = useDispatch();
+
+    const favoriteMovies = useSelector(state => state.favorites.faveList);
+
+    const isFavorite = (movieId) => {
+        return favoriteMovies.some(movie => movie.id === movieId);
+    };
+
+    const handleFavoriteClick = (movie) => {
+        console.log(movie);
+        if (isFavorite(movie.id)) {
+            dispatch(removeFromFavorites(movie));
+        } else {
+            dispatch(addToFavorites(movie));
+        }
+    };
+
     return (
         <Container>
             <Row>
@@ -26,8 +45,8 @@ const Movies = () => {
                                         </div>
                                     </div>
                                     <div className='movie-overlay'></div>
-                                    <div className='favorite-icon'>
-                                        <FontAwesomeIcon icon={faStar} />
+                                    <div className='favorite-icon' onClick={() => handleFavoriteClick(movie)}>
+                                        <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie.id) ? 'yellow' : 'white' }} />
                                     </div>
                                 </Link>
                             </div>

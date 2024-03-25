@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 import {
     Navbar,
     NavbarBrand,
@@ -20,6 +21,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+
+    const favoritesCount = useSelector((state) => state.favorites.faveList.length);
 
     return (
         <Navbar dark color='dark' sticky='top' expand='lg'>
@@ -59,7 +62,7 @@ const Header = () => {
             <img className="lamp1" src={lamp} alt="Light Mode lamp toggle" />
             <div className="favrites-icon-main">
             <img className="couch " src={couch} alt="favorites icon" />
-            <p className="favorites-count">3</p>
+            <p className="favorites-count">{favoritesCount}</p>
             </div>
             <UserLoginForm />
         </Navbar>
