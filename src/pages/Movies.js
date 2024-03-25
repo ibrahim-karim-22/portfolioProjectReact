@@ -18,12 +18,12 @@ const Movies = () => {
         return favoriteMovies.some(movie => movie.id === movieId);
     };
 
-    const handleFavoriteClick = (movie) => {
-        console.log(movie);
-        if (isFavorite(movie.id)) {
-            dispatch(removeFromFavorites(movie));
+    const handleFavoriteClick = (item, type) => {
+        const payload = { item, type };
+        if (isFavorite(item.id)) {
+            dispatch(removeFromFavorites(payload));
         } else {
-            dispatch(addToFavorites(movie));
+            dispatch(addToFavorites(payload));
         }
     };
 
@@ -39,16 +39,16 @@ const Movies = () => {
                             <div key={movie.id} className="movie-item position-relative">
                                 <Link to={`/movie/${movie.id}`} className="movie-link">
                                     <div className="poster-wrapper">
-                                        <img className='movies-poster-size' src={movie.poster} alt={movie.title} />
+                                        <img className='movies-poster-size' src={movie.poster} alt={movie.name} />
                                         <div className="play-icon-wrapper">
                                             <FontAwesomeIcon icon={faPlayCircle} className="play-icon" />
                                         </div>
                                     </div>
                                     <div className='movie-overlay'></div>
-                                    <div className='favorite-icon' onClick={() => handleFavoriteClick(movie)}>
+                                </Link>
+                                <div className='favorite-icon' onClick={() => handleFavoriteClick(movie, 'movie')}>
                                         <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie.id) ? 'yellow' : 'white' }} />
                                     </div>
-                                </Link>
                             </div>
                         ))}
                     </div>

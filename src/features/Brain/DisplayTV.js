@@ -8,14 +8,24 @@ const DisplayTV = () => {
     const handleChannelClick = (channel) => {
         setSelectedChannel(channel);
     };
-
+console.log(selectedChannel.channel)
     return (
         <Container>
             <Row>
                 <Col>
                     <div className="video-player-section mt-5">
                         <h2 className='channels-text'>{selectedChannel.name}</h2>
-                        <div className='channel-display'>{selectedChannel.channel}</div>
+                        <div className='channel-display'>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src={selectedChannel.channel}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                        </div>
                     </div>
                 </Col>
                 <Col className='mt-5'>

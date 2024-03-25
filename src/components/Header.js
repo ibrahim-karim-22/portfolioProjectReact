@@ -22,7 +22,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const favoritesCount = useSelector((state) => state.favorites.faveList.length);
+    const favoritesCount = useSelector((state) => state.favorites.faveList.length + state.favorites.faveListTV.length);
 
     return (
         <Navbar dark color='dark' sticky='top' expand='lg'>

@@ -10,17 +10,7 @@ export const Channels = [
                     and diversity of our natural world.`,
         genre: ['Documentary', 'Educational'],
         poster: "https://m.media-amazon.com/images/M/MV5BNjZhMDI3N2ItZGM2Zi00ZmU5LWI1MjQtMTBiODkxYTdkOGYyXkEyXkFqcGdeQXVyODE5MzYxOTc@._V1_.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/BJ3Yv572V1A?si=fIbctbLE9dCsrh8m&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/BJ3Yv572V1A?si=fIbctbLE9dCsrh8m&autoplay=1&mute=1"
     },
     {
         id: 2,
@@ -30,17 +20,9 @@ export const Channels = [
                     photographers, journalists, and filmmakers, Nat Geo gets you closer to the stories that matter and past the edge of what's possible.`,
         genre: ['Documentary', 'Educational'],
         poster: "https://media.licdn.com/dms/image/D4E12AQE5bMMVk0I62A/article-cover_image-shrink_720_1280/0/1709219077272?e=2147483647&v=beta&t=axFt-qXYgPn4wzCHIKTzdIfuKyl3S3z58-LdgpA-GPo",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/O6Qdxrf-6CM?si=lAu0KEQs23H_e0E5&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/O6Qdxrf-6CM?si=lAu0KEQs23H_e0E5&autoplay=1&mute=1"
+          
+        
     },
     {
         id: 3,
@@ -56,17 +38,9 @@ export const Channels = [
                     engaging and entertaining way`,
         genre: ['Animation', 'Entertainment', 'Adventure'],
         poster: "https://qph.cf2.quoracdn.net/main-qimg-6c647dcd9e1c9118ee7effd074369300",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Fjp2TdlTTIU?si=4i-PG9raF8nGv6O1&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/Fjp2TdlTTIU?si=4i-PG9raF8nGv6O1&autoplay=1&mute=1"
+        
+        
     },
     {
         id: 4,
@@ -79,17 +53,7 @@ export const Channels = [
                     audience. DW News is known for its credibility, objectivity, and commitment to providing accurate information to its viewers`,
         genre: ['News'],
         poster: "https://static.dw.com/image/66412807_1005.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/pqabxBKzZ6M?si=YGuHe01-wO7YGB7U&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/pqabxBKzZ6M?si=YGuHe01-wO7YGB7U&autoplay=1&mute=1"
     },
 
     {
@@ -105,17 +69,7 @@ export const Channels = [
                     news and serves as a vital resource for staying informed about the latest developments both domestically and globally`,
         genre: ['News'],
         poster: "https://deadline.com/wp-content/uploads/2024/02/kate-snow-nbc-news.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/EYnUwQC-LcM?si=IaqjHlXa8F-cBBZS&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/EYnUwQC-LcM?si=IaqjHlXa8F-cBBZS&autoplay=1&mute=1"
     },
     {
         id: 6,
@@ -125,17 +79,7 @@ export const Channels = [
                     and movies that are fun and family-friendly. It's known for popular shows like "Hannah Montana" and "High School Musical."`,
         genre: ['Animation', 'Entertainment', 'Adventure'],
         poster: "https://insidethemagic.net/wp-content/uploads/2020/06/Untitled-design-2020-06-05T122711.032.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/WFDbJY0eBGI?si=IOmXr1d235YevV18&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/WFDbJY0eBGI?si=IOmXr1d235YevV18&autoplay=1&mute=1"
     },
     {
         id: 7,
@@ -149,17 +93,7 @@ export const Channels = [
                     news and affairs.`,
         genre: ['News'],
         poster: "https://www.frenchentree.com/wp-content/uploads/2006/12/Appel-a-la-greve-a-la-redaction-de-France-24.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1"
     },
     {
         id: 8,
@@ -174,17 +108,7 @@ export const Channels = [
                     events and political issues.`,
         genre: ['News'],
         poster: "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2022/02/1024/512/Fox-News-daytime-Line-up-ratings.jpg?ve=1&tl=1",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/l8PMl7tUDIE?si=IRCIcACIfUbuh6JH&autoplay=1&mute=1"
     },
     {
         id: 9,
@@ -198,17 +122,7 @@ export const Channels = [
                     its gripping narratives and often shedding light on complex and intriguing real-life stories.`,
         genre: ['News'],
         poster: "https://imageservice.disco.peacocktv.com/uuid/9df1fec1-d2ba-3844-a83e-59f3abbc5042/LAND_16_9?language=eng&territory=US&version=465c096d-dda8-3c67-a15b-3d727770bc1b",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Qu7LseFrBJ4?si=68dxO-zvSWMoXEFh&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/Qu7LseFrBJ4?si=68dxO-zvSWMoXEFh&autoplay=1&mute=1"
     },
     {
         id: 10,
@@ -223,17 +137,7 @@ export const Channels = [
                     global media and journalism.`,
         genre: ['News'],
         poster: "https://www.aljazeera.net/images/logo_aja_social.png",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/bNyUyrR0PHo?si=hkYdkA_FW8DBMPia&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/bNyUyrR0PHo?si=hkYdkA_FW8DBMPia&autoplay=1&mute=1"
     },
     {
         id: 11,
@@ -248,17 +152,7 @@ export const Channels = [
                     global media and journalism.`,
         genre: ['News'],
         poster: "https://i.ytimg.com/vi/rxOWsyxrl4A/maxresdefault.jpg",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/BKXyGQtyECo?si=LNjxmreJ88MSGeL7&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/BKXyGQtyECo?si=LNjxmreJ88MSGeL7&autoplay=1&mute=1"
     },
     {
         id: 12,
@@ -275,17 +169,7 @@ export const Channels = [
                     strong international presence, reaching audiences across different continents.`,
         genre: ['News'],
         poster: "https://e3.365dm.com/23/02/1600x900/skynews-logo-livestream_6066509.jpg?20230222225154",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/w9uJg68CV4g?si=NYsrf-It_LV8k8yV&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/w9uJg68CV4g?si=NYsrf-It_LV8k8yV&autoplay=1&mute=1"
     },
     {
         id: 13,
@@ -303,17 +187,7 @@ export const Channels = [
 
         genre: ['Educational'],
         poster: "https://b1681952.smushcdn.com/1681952/wp-content/uploads/2019/04/NasaTV.jpg?lossy=0&strip=1&webp=1",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/21X5lGlDOfg?si=Ip71pQ-CJeRDmrRX&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/21X5lGlDOfg?si=Ip71pQ-CJeRDmrRX&autoplay=1&mute=1"
     },
     {
         id: 14,
@@ -331,17 +205,7 @@ export const Channels = [
 
         genre: ['News'],
         poster: "https://m.media-amazon.com/images/I/91KefeYB9-L.png",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/pykpO5kQJ98?si=Nw2HQtUt1_yGC8y2&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/pykpO5kQJ98?si=Nw2HQtUt1_yGC8y2&autoplay=1&mute=1"
     },
     {
         id: 15,
@@ -357,16 +221,6 @@ export const Channels = [
                     and engaged with the most significant events shaping the world.`,
         genre: ['News'],
         poster: "https://www.hollywoodreporter.com/wp-content/uploads/2023/09/ABCNEWS_LIVE_VERTICAL_KEYART_New_090723_crop-copy.jpg?w=1296",
-        channel: (
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3&autoplay=1&mute=1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-            ></iframe>
-        )
+        channel: "https://www.youtube.com/embed/gN0PZCe-kwQ?si=KYum4tIj9xMFxMt3&autoplay=1&mute=1"
     },
 ]
