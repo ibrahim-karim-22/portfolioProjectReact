@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentUser, selectCurrentUser } from "./userSlice";
+import login from '../../app/assets/images/login.png';
 
 import {
     Modal,
@@ -13,7 +14,6 @@ import {
 import { Formik, Field, Form, ErrorMessage } from "formik";
 
 import validateUserLogin from "./validateLogin";
-
 
 const UserLoginForm = () => {
     const [loginModalOpen, setLoginModalOpen] = useState(false);
@@ -48,9 +48,9 @@ const UserLoginForm = () => {
                     <Button
                         outline
                         onClick={() => setLoginModalOpen(true)}
-                        style={{ color: "white", border: "1px solid white" }}
+                        style={{ color: "white", border: "none", padding: "0" }}
                     >
-                        <i className="fa fa-sign-in fa-lg" /> Login
+                       <img className="tv" src={login} alt="Login Button" />
                     </Button>
                 )}
             </span>
