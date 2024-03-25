@@ -10,6 +10,7 @@ import ChannelsList from "./pages/LiveTVList";
 import LiveTV from "./pages/LiveTV";
 import Movies from "./pages/Movies";
 import DisplayMovie from "./features/Brain/DisplayMovie";
+import FavoritesPage from "./pages/FavoritesPage";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
           <Route path="/movie/:id" element={<DisplayMovie />} />
           <Route path="/livetv" element={<ChannelsList />} />
           <Route path="/livetv/:id" element={<LiveTV />} />
-          
+          <Route path="/favorites" element={<FavoritesPage />} />
           <Route path="/liveGlobe" element={<LiveGlobe />} />
         </Routes>
         <Footer />

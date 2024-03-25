@@ -9,6 +9,7 @@ import {
     NavItem
 } from "reactstrap";
 import { NavLink } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import couch  from '../app/assets/images/couch.png'
 import lamp from '../app/assets/images//lamp.png'
 import title from '../app/assets/images/title.png'
@@ -23,6 +24,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const favoritesCount = useSelector((state) => state.favorites.faveList.length + state.favorites.faveListTV.length);
+    // console.log(favoritesCount);
 
     return (
         <Navbar dark color='dark' sticky='top' expand='lg'>
@@ -61,7 +63,9 @@ const Header = () => {
             
             <img className="lamp1" src={lamp} alt="Light Mode lamp toggle" />
             <div className="favrites-icon-main">
+                <Link to={`/favorites`}>
             <img className="couch " src={couch} alt="favorites icon" />
+            </Link>
             <p className="favorites-count">{favoritesCount}</p>
             </div>
             <UserLoginForm />
