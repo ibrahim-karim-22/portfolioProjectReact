@@ -13,9 +13,9 @@ export const MoviesArr = [
         shootingLocations: ["Charlie Chaplin Studios, Hollywood, California, USA"],
         releaseDate: "August 7, 1916",
         trivia: [
-            "This was one of Charlie Chaplin's earliest solo efforts without his famous 'Tramp' character.",
-            "The entire movie was shot in a single room set, showcasing Chaplin's ability to create comedy within a confined space.",
-            "Chaplin's performance in 'One A.M.' is highly physical, featuring numerous slapstick gags and comedic stunts.",
+            "This was one of Charlie Chaplin's earliest solo efforts without his famous 'Tramp' character. ",
+            "The entire movie was shot in a single room set, showcasing Chaplin's ability to create comedy within a confined space. ",
+            "Chaplin's performance in 'One A.M.' is highly physical, featuring numerous slapstick gags and comedic stunts. ",
             ""
         ]
     },
@@ -33,9 +33,9 @@ export const MoviesArr = [
         shootingLocations: ["Venice, California, USA"],
         releaseDate: "February 7, 1914",
         trivia: [
-            "This film is notable for being one of Charlie Chaplin's earliest appearances as the Tramp character, which would later become his most iconic role.",
-            "The movie was shot during an actual children's auto race event in Venice, California, with Chaplin improvising his performance amidst the chaos of the race.",
-            "Despite its short length, 'Kid Auto Races at Venice' was a significant success for Chaplin and helped establish him as a comedic star in the film industry."
+            "This film is notable for being one of Charlie Chaplin's earliest appearances as the Tramp character, which would later become his most iconic role. ",
+            "The movie was shot during an actual children's auto race event in Venice, California, with Chaplin improvising his performance amidst the chaos of the race. ",
+            "Despite its short length, 'Kid Auto Races at Venice' was a significant success for Chaplin and helped establish him as a comedic star in the film industry. "
         ]
     },
     {
@@ -52,9 +52,9 @@ export const MoviesArr = [
         shootingLocations: ["Niles Canyon, Fremont, California, USA"],
         releaseDate: "July 10, 1916",
         trivia: [
-            "This film marks the second collaboration between Charlie Chaplin and actress Edna Purviance.",
-            "The character of the gypsy girl was played by Edna Purviance.",
-            "The movie features Chaplin's trademark blend of comedy and pathos, with moments of slapstick humor alongside poignant romantic scenes."
+            "This film marks the second collaboration between Charlie Chaplin and actress Edna Purviance. ",
+            "The character of the gypsy girl was played by Edna Purviance. ",
+            "The movie features Chaplin's trademark blend of comedy and pathos, with moments of slapstick humor alongside poignant romantic scenes. "
         ]
     },
     {
@@ -71,9 +71,9 @@ export const MoviesArr = [
         shootingLocations: ["Niles Canyon, Fremont, California, USA"],
         releaseDate: "September 4, 1916",
         trivia: [
-            "This film is notable for its use of location shooting in Niles Canyon, California.",
-            "The character of Count Broko was played by Eric Campbell, who often portrayed villains in Chaplin's films.",
-            "The movie features Chaplin's trademark physical comedy and slapstick humor."
+            "This film is notable for its use of location shooting in Niles Canyon, California. ",
+            "The character of Count Broko was played by Eric Campbell, who often portrayed villains in Chaplin's films. ",
+            "The movie features Chaplin's trademark physical comedy and slapstick humor. "
         ]
     },
     {
@@ -90,8 +90,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "June 12, 1916",
         trivia: [
-            "This film features some of Chaplin's most famous and daring stunts, including climbing up a burning building.",
-            "Edna Purviance, who plays the daughter of the wealthy man, was a frequent co-star of Chaplin during this period.",
+            "This film features some of Chaplin's most famous and daring stunts, including climbing up a burning building .",
+            "Edna Purviance, who plays the daughter of the wealthy man, was a frequent co-star of Chaplin during this period. ",
             "The movie showcases Chaplin's inventive use of props and physical comedy."
         ]
     },
@@ -109,8 +109,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "November 13, 1916",
         trivia: [
-            "This film showcases Chaplin's experiences working in the film industry and provides a humorous look at the behind-the-scenes chaos of movie production.",
-            "Edna Purviance, who plays the actress in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's experiences working in the film industry and provides a humorous look at the behind-the-scenes chaos of movie production. ",
+            "Edna Purviance, who plays the actress in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor."
         ]
     },
@@ -128,8 +128,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 16, 1917",
         trivia: [
-            "This film features Chaplin's iconic character, the Tramp, in yet another humorous misadventure.",
-            "Edna Purviance, who plays the love interest in the film, was a frequent co-star of Chaplin during this period.",
+            "This film features Chaplin's iconic character, the Tramp, in yet another humorous misadventure. ",
+            "Edna Purviance, who plays the love interest in the film, was a frequent co-star of Chaplin during this period. ",
             "The movie includes memorable scenes involving Chaplin's character trying various unconventional treatments at the spa."
         ]
     },
@@ -146,9 +146,9 @@ export const MoviesArr = [
         poster: "https://upload.wikimedia.org/wikipedia/commons/4/44/CC_The_Champion_1915.jpg",
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "March 11, 1915",
-        trivia: [
-            "This film marks one of Chaplin's earliest ventures into the realm of sports comedy.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+        trivia: [ 
+            "This film marks one of Chaplin's earliest ventures into the realm of sports comedy. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, particularly in the boxing scenes."
         ]
     },
@@ -166,8 +166,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "October 22, 1917",
         trivia: [
-            "This film showcases Chaplin's characteristically deft physical comedy and clever situational humor.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's characteristically deft physical comedy and clever situational humor. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features several memorable sequences, including a chaotic dinner party scene and a daring escape from pursuers."
         ]
     },
@@ -185,11 +185,11 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "February 15, 1915",
         trivia: [
-            "This film showcases Chaplin's physical comedy prowess, with several memorable scenes involving drunken antics.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
-            "The movie features Chaplin's signature slapstick humor and clever use of visual gags.",
-            "In one scene, Chaplin's character's hat magically reappears on his head after he throws it away.",
-            "There's a continuity error in the scene where Chaplin's character spills a drink; the amount of liquid on the floor changes between shots."
+            "This film showcases Chaplin's physical comedy prowess, with several memorable scenes involving drunken antics. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
+            "The movie features Chaplin's signature slapstick humor and clever use of visual gags. ",
+            "In one scene, Chaplin's character's hat magically reappears on his head after he throws it away. ",
+            "There's a continuity error in the scene where Chaplin's character spills a drink; the amount of liquid on the floor changes between shots. "
         ],
     },
     {
@@ -206,8 +206,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "May 15, 1916",
         trivia: [
-            "This film marks one of Chaplin's early forays into the world of department store comedy.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film marks one of Chaplin's early forays into the world of department store comedy. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes involving escalators and store displays."
         ]
     },
@@ -225,8 +225,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "March 18, 1915",
         trivia: [
-            "This film showcases Chaplin's talent for physical comedy and his ability to find humor in everyday situations.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's talent for physical comedy and his ability to find humor in everyday situations. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's signature style, with memorable scenes involving park benches, picnics, and misunderstandings."
         ]
     },
@@ -244,8 +244,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "January 22, 1917",
         trivia: [
-            "This film is noted for its social commentary on poverty, crime, and urban decay, while still maintaining Chaplin's trademark humor.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film is noted for its social commentary on poverty, crime, and urban decay, while still maintaining Chaplin's trademark humor. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's inventive use of physical comedy and slapstick humor, with memorable scenes involving street fights and chaotic chases."
         ]
     },
@@ -263,8 +263,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "November 20, 1915",
         trivia: [
-            "This film showcases Chaplin's versatility as an actor, as he plays two different characters with contrasting personalities.",
-            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's versatility as an actor, as he plays two different characters with contrasting personalities. ",
+            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a theater environment."
         ]
     },
@@ -282,8 +282,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "June 17, 1917",
         trivia: [
-            "This film is noted for its portrayal of the immigrant experience and social commentary on poverty and inequality.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film is noted for its portrayal of the immigrant experience and social commentary on poverty and inequality. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set on a ship and in an immigrant neighborhood."
         ]
     },
@@ -301,8 +301,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "July 12, 1915",
         trivia: [
-            "This film showcases Chaplin's compassion for human struggles and his ability to find humor in difficult situations.",
-            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's compassion for human struggles and his ability to find humor in difficult situations. ",
+            "Edna Purviance, who plays the leading lady in the film, was one of Chaplin's most frequent leading ladies during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes involving mistaken identities and romantic pursuits."
         ]
     },
@@ -320,8 +320,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "December 10, 1914",
         trivia: [
-            "This film features Chaplin's early work in silent comedy, with slapstick humor and comedic rivalry.",
-            "Chester Conklin, who plays a rival suitor in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film features Chaplin's early work in silent comedy, with slapstick humor and comedic rivalry. ",
+            "Chester Conklin, who plays a rival suitor in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie showcases Chaplin's comedic talents in a love triangle scenario, with humorous misunderstandings and physical comedy."
         ]
     },
@@ -339,8 +339,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "August 7, 1914",
         trivia: [
-            "This film features Chaplin's collaboration with Roscoe 'Fatty' Arbuckle, another prominent silent film comedian.",
-            "Phyllis Allen, who plays a role in the film, was a frequent co-star in Chaplin's early works.",
+            "This film features Chaplin's collaboration with Roscoe 'Fatty' Arbuckle, another prominent silent film comedian. ",
+            "Phyllis Allen, who plays a role in the film, was a frequent co-star in Chaplin's early works.  ",
             "The movie showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes involving drunken antics."
         ]
     },
@@ -359,8 +359,8 @@ export const MoviesArr = [
         releaseDate: "October 26, 1914",
         trivia: [
             "This film marks Chaplin's collaboration with Mabel Normand, a popular silent film actress.",
-            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
-            "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes of mistaken identities and marital misunderstandings."
+            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
+            "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes of mistaken identities and marital misunderstandings. "
         ]
     },
     {
@@ -377,8 +377,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "November 2, 1914",
         trivia: [
-            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress.",
-            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress. ",
+            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set at a race track."
         ]
     },
@@ -396,8 +396,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 10, 1914",
         trivia: [
-            "This film showcases Chaplin's early work in silent comedy, with humor derived from everyday situations and misunderstandings.",
-            "Minta Durfee, who plays a role in the film, was Chaplin's first wife.",
+            "This film showcases Chaplin's early work in silent comedy, with humor derived from everyday situations and misunderstandings. ",
+            "Minta Durfee, who plays a role in the film, was Chaplin's first wife. ",
             "The movie features Chaplin's signature style of physical comedy and slapstick humor, with memorable scenes set in a park and a café."
         ]
     },
@@ -415,8 +415,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "June 13, 1914",
         trivia: [
-            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress.",
-            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress. ",
+            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a busy street."
         ]
     },
@@ -434,8 +434,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "July 20, 1914",
         trivia: [
-            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress.",
-            "Mack Swain, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film features Chaplin's collaboration with Mabel Normand, a popular silent film actress. ",
+            "Mack Swain, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a domestic setting."
         ]
     },
@@ -453,8 +453,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "May 7, 1914",
         trivia: [
-            "This film showcases Chaplin's comedic talent in a gender-bending role, playing a woman causing havoc in public.",
-            "Mack Swain and Phyllis Allen, who play supporting roles in the film, were frequent collaborators with Chaplin during this period.",
+            "This film showcases Chaplin's comedic talent in a gender-bending role, playing a woman causing havoc in public. ",
+            "Mack Swain and Phyllis Allen, who play supporting roles in the film, were frequent collaborators with Chaplin during this period. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a crowded street."
         ]
     },
@@ -472,8 +472,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 11, 1914",
         trivia: [
-            "This film features Chaplin in a supporting role, showcasing his early collaboration with Fatty Arbuckle.",
-            "Minta Durfee, who plays a role in the film, was Chaplin's first wife.",
+            "This film features Chaplin in a supporting role, showcasing his early collaboration with Fatty Arbuckle. ",
+            "Minta Durfee, who plays a role in the film, was Chaplin's first wife. ",
             "The movie highlights Chaplin's physical comedy and slapstick humor, with memorable scenes set in a boxing arena."
         ]
     },
@@ -491,8 +491,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 27, 1914",
         trivia: [
-            "This film features Charlie Chaplin in a cameo role as a waiter, marking one of his early appearances in a supporting role.",
-            "Mabel Normand, who directed and starred in the film, was one of the leading comedic actresses of the silent film era.",
+            "This film features Charlie Chaplin in a cameo role as a waiter, marking one of his early appearances in a supporting role. ",
+            "Mabel Normand, who directed and starred in the film, was one of the leading comedic actresses of the silent film era. ",
             "The movie combines elements of slapstick comedy and social satire, with Chaplin's brief appearance adding to the comedic antics."
         ]
     },
@@ -510,8 +510,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "August 31, 1914",
         trivia: [
-            "This film showcases Chaplin's iconic Tramp character in a new profession, exploring themes of class and social status.",
-            "Mabel Normand, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film showcases Chaplin's iconic Tramp character in a new profession, exploring themes of class and social status. ",
+            "Mabel Normand, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "Charley Chase, who also appears in the film, was a popular comedian and actor known for his work in silent films."
         ]
     },
@@ -529,8 +529,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "May 18, 1914",
         trivia: [
-            "This film is noted for its slapstick comedy and physical humor, typical of the silent film era.",
-            "Mabel Normand, who stars in the film, was one of the most popular actresses of the time.",
+            "This film is noted for its slapstick comedy and physical humor, typical of the silent film era. ",
+            "Mabel Normand, who stars in the film, was one of the most popular actresses of the time. ",
             "The movie features Charlie Chaplin in a supporting role, showcasing his comedic talents alongside the leading cast."
         ]
     },
@@ -548,8 +548,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "August 10, 1914",
         trivia: [
-            "This film features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a bakery.",
-            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a bakery. ",
+            "Chester Conklin, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie explores themes of class struggle and labor disputes, common in Chaplin's early works."
         ]
     },
@@ -567,8 +567,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "June 15, 1914",
         trivia: [
-            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a barroom.",
-            "Louella Maxam and Leona Anderson, who play supporting roles, were frequent collaborators with Chaplin during this period.",
+            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a barroom. ",
+            "Louella Maxam and Leona Anderson, who play supporting roles, were frequent collaborators with Chaplin during this period. ",
             "The movie explores themes of drunkenness and disorder, common in silent comedy of the era."
         ]
     },
@@ -586,8 +586,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "February 23, 1914",
         trivia: [
-            "This film showcases Chaplin's comedic talent in a prehistoric setting, blending humor with social commentary.",
-            "Mack Swain, who plays a role in the film, was a frequent collaborator with Chaplin during this period.",
+            "This film showcases Chaplin's comedic talent in a prehistoric setting, blending humor with social commentary. ",
+            "Mack Swain, who plays a role in the film, was a frequent collaborator with Chaplin during this period. ",
             "The movie features Chaplin's signature physical comedy and slapstick humor, with memorable scenes set in a cave."
         ]
     },
@@ -605,8 +605,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "August 27, 1914",
         trivia: [
-            "This film features Chaplin's talent for physical comedy and gender-bending roles, with memorable scenes of mistaken identity.",
-            "Roscoe 'Fatty' Arbuckle, who appears in the film, was a popular comedian and actor known for his collaborations with Chaplin.",
+            "This film features Chaplin's talent for physical comedy and gender-bending roles, with memorable scenes of mistaken identity. ",
+            "Roscoe 'Fatty' Arbuckle, who appears in the film, was a popular comedian and actor known for his collaborations with Chaplin. ",
             "The movie explores themes of disguise and deception, common in silent comedies of the era."
         ]
     },
@@ -624,8 +624,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "May 27, 1916",
         trivia: [
-            "This film showcases Chaplin's iconic Tramp character in a series of chaotic encounters with law enforcement.",
-            "Edna Purviance, who plays a role in the film, was one of Chaplin's most frequent leading ladies.",
+            "This film showcases Chaplin's iconic Tramp character in a series of chaotic encounters with law enforcement. ",
+            "Edna Purviance, who plays a role in the film, was one of Chaplin's most frequent leading ladies. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable chase sequences."
         ]
     },
@@ -643,9 +643,9 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "January 5, 1914",
         trivia: [
-            "This film marks one of Chaplin's earliest appearances as the Tramp character.",
-            "Ford Sterling, who plays a role in the film, was a popular comedian and actor of the silent film era.",
-            "The movie features Chaplin's signature physical comedy and slapstick humor, with memorable scenes set in a park."
+            "This film marks one of Chaplin's earliest appearances as the Tramp character. ",
+            "Ford Sterling, who plays a role in the film, was a popular comedian and actor of the silent film era. ",
+            "The movie features Chaplin's signature physical comedy and slapstick humor, with memorable scenes set in a park. "
         ]
     },
     {
@@ -662,8 +662,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 4, 1914",
         trivia: [
-            "This film showcases Chaplin's comedic talent in a domestic setting, with themes of rivalry and romance.",
-            "Minta Durfee, who plays the landlady, was a popular actress in silent comedies.",
+            "This film showcases Chaplin's comedic talent in a domestic setting, with themes of rivalry and romance. ",
+            "Minta Durfee, who plays the landlady, was a popular actress in silent comedies. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a boarding house."
         ]
     },
@@ -681,8 +681,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "December 18, 1915",
         trivia: [
-            "This film is a spoof of the opera 'Carmen,' with Chaplin playing a comedic version of the male protagonist, Don José.",
-            "Edna Purviance, who plays a role in the film, was Chaplin's leading lady in many of his early works.",
+            "This film is a spoof of the opera 'Carmen,' with Chaplin playing a comedic version of the male protagonist, Don José. ",
+            "Edna Purviance, who plays a role in the film, was Chaplin's leading lady in many of his early works. ",
             "The movie features Chaplin's signature physical comedy and slapstick humor, with memorable scenes parodying the opera's dramatic elements."
         ]
     },
@@ -700,8 +700,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "August 13, 1914",
         trivia: [
-            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a park.",
-            "Minta Durfee, who plays a role in the film, was a popular actress in silent comedies.",
+            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a park. ",
+            "Minta Durfee, who plays a role in the film, was a popular actress in silent comedies. ",
             "The movie features Chaplin's trademark antics and charm, delighting audiences with his comedic portrayal of everyday situations."
         ]
     },
@@ -719,8 +719,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "March 2, 1914",
         trivia: [
-            "This film satirizes the Hollywood film industry and the culture of celebrity.",
-            "Roscoe 'Fatty' Arbuckle and Mabel Normand, who appear in the film, were popular silent film stars.",
+            "This film satirizes the Hollywood film industry and the culture of celebrity. ",
+            "Roscoe 'Fatty' Arbuckle and Mabel Normand, who appear in the film, were popular silent film stars. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes set in a movie studio."
         ]
     },
@@ -738,8 +738,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "September 14, 1914",
         trivia: [
-            "This film features Chaplin in one of his early roles as a drunkard, a character he would revisit in later films.",
-            "Roscoe 'Fatty' Arbuckle, who appears in the film, was a popular comedian and actor known for his collaborations with Chaplin.",
+            "This film features Chaplin in one of his early roles as a drunkard, a character he would revisit in later films. ",
+            "Roscoe 'Fatty' Arbuckle, who appears in the film, was a popular comedian and actor known for his collaborations with Chaplin. ",
             "The movie showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set in a bar."
         ]
     },
@@ -757,8 +757,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "November 1, 1914",
         trivia: [
-            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set behind the scenes of a theater.",
-            "Phyllis Allen and Mack Swain, who appear in the film, were frequent collaborators with Chaplin during this period.",
+            "This film showcases Chaplin's talent for physical comedy and slapstick humor, with memorable scenes set behind the scenes of a theater. ",
+            "Phyllis Allen and Mack Swain, who appear in the film, were frequent collaborators with Chaplin during this period. ",
             "The movie explores themes of chaos and disorder in the theater environment, providing a humorous take on the challenges of stage production."
         ]
     },
@@ -776,8 +776,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "February 9, 1914",
         trivia: [
-            "This film showcases Chaplin's physical comedy skills, with humorous situations arising from the chaos caused by his character.",
-            "Fritz Schade and Alice Howell, who appear in the film, were popular actors in silent comedies.",
+            "This film showcases Chaplin's physical comedy skills, with humorous situations arising from the chaos caused by his character. ",
+            "Fritz Schade and Alice Howell, who appear in the film, were popular actors in silent comedies. ",
             "The movie provides a comedic take on the experiences of visiting the dentist, with Chaplin's character adding to the absurdity of the situation."
         ]
     },
@@ -795,8 +795,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "December 10, 1914",
         trivia: [
-            "This film showcases Chaplin's comedic portrayal of romance and courtship, with humorous situations arising from his character's attempts to impress the woman.",
-            "Edna Purviance, who plays a role in the film, was one of Chaplin's most frequent leading ladies.",
+            "This film showcases Chaplin's comedic portrayal of romance and courtship, with humorous situations arising from his character's attempts to impress the woman. ",
+            "Edna Purviance, who plays a role in the film, was one of Chaplin's most frequent leading ladies. ",
             "The movie features Chaplin's trademark physical comedy and slapstick humor, with memorable scenes of romantic mishaps."
         ]
     },
@@ -814,8 +814,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "May 15, 1916",
         trivia: [
-            "This film marks one of Chaplin's early successes as a filmmaker, with inventive sight gags and physical comedy.",
-            "Eric Campbell, who appears in the film, was a frequent collaborator with Chaplin, often playing the antagonist.",
+            "This film marks one of Chaplin's early successes as a filmmaker, with inventive sight gags and physical comedy. ",
+            "Eric Campbell, who appears in the film, was a frequent collaborator with Chaplin, often playing the antagonist. ",
             "The movie features Chaplin's signature humor and satire, poking fun at the disparities between the rich and the poor."
         ]
     },
@@ -833,8 +833,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "February 2, 1914",
         trivia: [
-            "This film marks Chaplin's film debut, although it was not his first film produced.",
-            "Virginia Kirtley and Alice Davenport, who appear in the film, were actresses known for their roles in silent comedies.",
+            "This film marks Chaplin's film debut, although it was not his first film produced. ",
+            "Virginia Kirtley and Alice Davenport, who appear in the film, were actresses known for their roles in silent comedies. ",
             "The movie showcases Chaplin's early experimentation with characterizations and slapstick comedy."
         ]
     },
@@ -852,8 +852,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "December 4, 1916",
         trivia: [
-            "This film showcases Chaplin's mastery of physical comedy, with inventive and daring stunts performed on roller skates.",
-            "Edna Purviance and Eric Campbell, who appear in the film, were frequent collaborators with Chaplin.",
+            "This film showcases Chaplin's mastery of physical comedy, with inventive and daring stunts performed on roller skates. ",
+            "Edna Purviance and Eric Campbell, who appear in the film, were frequent collaborators with Chaplin. ",
             "The movie features Chaplin's trademark humor and satire, with memorable scenes set in a bustling roller rink."
         ]
     },
@@ -871,8 +871,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "December 21, 1914",
         trivia: [
-            "This film is considered the first feature-length comedy film ever made.",
-            "It features Charlie Chaplin in his first feature film role, portraying a supporting character named Charlie.",
+            "This film is considered the first feature-length comedy film ever made. ",
+            "It features Charlie Chaplin in his first feature film role, portraying a supporting character named Charlie. ",
             "Marie Dressler, who plays Tillie, was a renowned stage and screen actress known for her comedic talents."
         ]
     },
@@ -890,10 +890,10 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "April 1, 1915",
         trivia: [
-            "This film features Chaplin's signature humor and physical comedy, as well as his romantic interest, Edna Purviance.",
-            "The movie is notable for its use of slapstick comedy and clever visual gags.",
-            "Chaplin's character faces numerous obstacles during the elopement, providing plenty of opportunities for comedic situations.",
-            "In one scene, the car's license plate changes from one shot to another.",
+            "This film features Chaplin's signature humor and physical comedy, as well as his romantic interest, Edna Purviance. ",
+            "The movie is notable for its use of slapstick comedy and clever visual gags. ",
+            "Chaplin's character faces numerous obstacles during the elopement, providing plenty of opportunities for comedic situations. ",
+            "In one scene, the car's license plate changes from one shot to another. ",
             "There's a continuity error in the scene where Chaplin's character spills coffee on his shirt; the stain disappears and reappears throughout the scene."
         ],
     },
@@ -911,8 +911,8 @@ export const MoviesArr = [
         shootingLocations: ["Los Angeles, California, USA"],
         releaseDate: "October 2, 1916",
         trivia: [
-            "This film showcases Chaplin's physical comedy skills, with several memorable scenes involving the chaotic environment of a pawnshop.",
-            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period.",
+            "This film showcases Chaplin's physical comedy skills, with several memorable scenes involving the chaotic environment of a pawnshop. ",
+            "Edna Purviance, who plays a leading role in the film, was one of Chaplin's most frequent leading ladies during this period.  ",
             "The movie features Chaplin's signature style of humor, with clever visual gags and slapstick comedy."
         ]
     }

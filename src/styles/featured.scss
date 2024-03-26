@@ -1,12 +1,30 @@
-.movies-carousel-item {
-  width: 333px;
-  align-items: center;
-  display: block;
-  margin: auto;
+
+.featured-channel-poster {
+  width: 400px;
+  height: auto;
 }
-.featured {
-  color: white;
-  text-align: center;
-  margin-top: 55px;
-  margin-bottom: 55px;
+.featured-movies,
+.featured-tvs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start; 
+  gap: 30px; 
 }
+
+.featured-movie-poster {
+  width: 200px; 
+  height: auto;
+}
+.featured-movies-container,
+.featured-tvs-container {
+  margin-top: 122px; 
+  margin-bottom: 222px;
+}.featured-text {
+  color: pink;
+  font-size: 122px;
+  font-family: "Imbue", serif;
+  margin-top: 122px;
+  text-shadow: black 2px 2px 2px;
+}
+

@@ -1,8 +1,7 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { setCurrentUser, selectCurrentUser } from "./userSlice";
 import login from '../../app/assets/images/login.png';
-
 import {
     Modal,
     ModalHeader,
@@ -12,7 +11,6 @@ import {
     Button,
 } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
-
 import validateUserLogin from "./validateLogin";
 
 const UserLoginForm = () => {
@@ -24,7 +22,6 @@ const UserLoginForm = () => {
         console.log(values);
         const currentUser = {
             id: Date.now(),
-            // avatar: defaultAvatar,
             username: values.username,
             password: values.password,
         };
@@ -32,17 +29,19 @@ const UserLoginForm = () => {
         setLoginModalOpen(false);
     };
 
+    const handleLogout = () => {
+        dispatch(setCurrentUser(null));
+    };
+
     return (
         <>
             <span className="navbar-text ml-auto">
                 {currentUser ? (
-                    <div style={{ width: "4rem", height: "4rem" }}>
-                        {/* <img
-                            src={currentUser.avatar}
-                            alt="user"
-                            style={{ width: "100%", height: "100%" }}
-                        /> */}
-                        {currentUser.username}
+                    <div style={{ display: "flex", alignItems: "center", color: 'black', fontSize: '22px' }}>
+                        <span style={{ marginRight: "10px" }}>{currentUser.username}</span>
+                        <Button outline onClick={handleLogout}>
+                           LOGOUT
+                        </Button>
                     </div>
                 ) : (
                     <Button

@@ -49,7 +49,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 86%;
     background-color: rgba(0, 0, 0, 0.5); 
     opacity: 0; 
     transition: opacity 0.3s ease;
@@ -69,6 +69,7 @@
 .channel-link:hover .favorite-icon-channels,
 .channel-link:hover .play-icon-wrapper-channels {
     opacity: 1; 
+    cursor: pointer;
 }
 .favorite-icon-channels:hover {
     color: gray;

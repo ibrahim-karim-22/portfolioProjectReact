@@ -6,7 +6,7 @@ import { Channels } from '../app/assets/shared/ChannelsMain';
 import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
-import Genre from '../features/Brain/genresToggle'; // Update the import path
+import Genre from '../features/Brain/genresToggle';
 
 const ChannelsList = () => {
     const dispatch = useDispatch();

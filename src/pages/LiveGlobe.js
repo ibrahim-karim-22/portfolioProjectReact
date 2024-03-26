@@ -1,5 +1,5 @@
 const LiveGlobe = () => {
-    return <div>LiveGlobe</div>
+    return <h1 style={{color: 'pink'}}>Loading...</h1>
 };
 
 export default LiveGlobe;

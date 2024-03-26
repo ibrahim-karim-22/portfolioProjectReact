@@ -37,12 +37,12 @@ const DisplayMovie = () => {
                     <p>Duration: {movie.duration}</p>
                 </Col>
                 <Col md='1'>
-                    <p>Cast <br />{movie.cast}</p>
+                    <p>Cast: <br />{movie.cast}</p>
                 </Col>
             </Row>
-            <Row className='mt-5'>
+            <Row>
                 <Col>
-                    <video className='display-movie' width="1200" height="800" controls>
+                    <video className='display-movie' width="550" height="520" controls>
                         <source src={movie.video} type="video/mp4" />
                         Your browser does not support this video type.
                     </video>
