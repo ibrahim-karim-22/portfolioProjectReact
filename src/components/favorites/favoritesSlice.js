@@ -12,9 +12,9 @@ const favoritesSlice = createSlice({
             let newItem = { ...item };
 
             if (type === 'movie') {
-                state.faveList = [...state.faveList, newItem]; // Using spread operator to create a new array
+                state.faveList = [...state.faveList, newItem]; 
             } else if (type === 'tvChannel') {
-                state.faveListTV = [...state.faveListTV, newItem]; // Using spread operator to create a new array
+                state.faveListTV = [...state.faveListTV, newItem]; 
             }
         },
         removeFromFavorites(state, action) {
