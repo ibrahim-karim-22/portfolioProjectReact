@@ -1,7 +1,17 @@
-body {
-  background-image: url(https://www.solidbackgrounds.com/images/3840x2160/3840x2160-black-solid-color-background.jpg);
+// body {
+//   background-image: url(https://www.solidbackgrounds.com/images/3840x2160/3840x2160-black-solid-color-background.jpg);
 
-  background-size: cover;
+//   background-size: cover;
+// }
+.light-mode {
+  background-image: url('../app/assets/images/lamp.png');
+
+}
+
+/* Dark mode background */
+.dark-mode {
+  background-image: url('../app/assets/images/lampOff.png');
+
 }
 p {
   color: white;

@@ -20,12 +20,14 @@
 
 .lamp1 {
   width: 222px;
-  transform: translateY(-44px);
+  transform: translateY(-55px);
   transition: transform 0.7s ease;
 }
 .lamp1:hover {
   transform: rotate(1deg);
+  cursor: pointer;
 }
+
 
 .tv {
   width: 222px;

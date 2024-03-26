@@ -11,7 +11,7 @@ import Genre from '../features/Brain/genresToggle';
 
 const Movies = () => {
     const dispatch = useDispatch();
-
+    const currentUser = useSelector(state => state.user.currentUser);
     const favoriteMovies = useSelector(state => state.favorites.faveList);
 
     const isFavorite = (movieId) => {
@@ -46,9 +46,11 @@ const Movies = () => {
                                     </div>
                                     <div className='movie-overlay'></div>
                                 </Link>
+                                {currentUser && (
                                 <div className='favorite-icon' onClick={() => handleFavoriteClick(movie, 'movie')}>
                                         <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie.id) ? 'yellow' : 'white' }} />
                                     </div>
+                                    )}
                             </div>
                         ))}
                     </div>

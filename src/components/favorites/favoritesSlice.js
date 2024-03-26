@@ -5,27 +5,27 @@ const favoritesSlice = createSlice({
     initialState: {
         faveList: [],
         faveListTV: [],
-       
     },
     reducers: {
         addToFavorites(state, action) {
             const { item, type } = action.payload;
+            let newItem = { ...item };
+
             if (type === 'movie') {
-              state.faveList.push({ id: item.id, name: item.name }); 
+                state.faveList = [...state.faveList, newItem]; // Using spread operator to create a new array
             } else if (type === 'tvChannel') {
-              state.faveListTV.push({ id: item.id, name: item.name }); 
+                state.faveListTV = [...state.faveListTV, newItem]; // Using spread operator to create a new array
             }
-            console.log(`Added to favorites: ${item.name} `, action );
-            
         },
         removeFromFavorites(state, action) {
             const { item, type } = action.payload;
+            // let newItem = { ...item };
+
             if (type === 'movie') {
-              state.faveList = state.faveList.filter(movie => movie.id !== item.id);
+                state.faveList = state.faveList.filter(movie => movie.id !== item.id);
             } else if (type === 'tvChannel') {
-              state.faveListTV = state.faveListTV.filter(channel => channel.id !== item.id);
-            } 
-            console.log(`Removed from favorites: ${item.name} `, action)       
+                state.faveListTV = state.faveListTV.filter(channel => channel.id !== item.id);
+            }
         },
     },
 });

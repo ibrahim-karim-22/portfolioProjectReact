@@ -9,7 +9,7 @@ import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
 const ChannelsList = () => {
     const dispatch = useDispatch();
-
+    const currentUser = useSelector(state => state.user.currentUser)
     const favoriteChannels = useSelector(state => state.favorites.faveListTV);
 
     const isFavorite = (channelId) => {
@@ -41,9 +41,11 @@ const ChannelsList = () => {
                                     </div>
                                     <div className='channel-overlay'></div>
                                 </Link>
+                                {currentUser && (
                                     <div className='favorite-icon-channels' onClick={() => handleFavoriteClick(channel, 'tvChannel')}>
                                         <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white'}} />
                                     </div>
+                                    )}
                             </div>
                         ))}
                     </div>
