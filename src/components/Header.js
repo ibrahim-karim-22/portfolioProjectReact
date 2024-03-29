@@ -17,7 +17,7 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [lightMode, setLightMode] = useState(false);
     const currentUser = useSelector((state) => state.user.currentUser);
-    const favoritesCount = useSelector((state) => state.favorites.faveList.length + state.favorites.faveListTV.length);
+    const favoritesCount = useSelector((state) => state.favorites.faveList.length + state.favorites.faveListTV.length + state.favorites.faveListGlobe.length);
 
     const toggleLightMode = () => {
         setLightMode(prevMode => !prevMode);

@@ -47,7 +47,7 @@ const FavoritesPage = () => {
                     <div className='channels-container'>
                         {favoriteTV.map(channel => (
                             <div key={channel.id} className='channel-item position-relative'>
-                                <Link to={`/livetv/:id`} className='channel-link'>
+                                <Link to={`/livetv/${channel.id}`} className='channel-link'>
                                     <div className='poster-wrapper-channels'>
                                             <img src={channel.poster} alt={channel.name} className='channels-poster-size' />
                                             <div className='play-icon-wrapper-channels'>
@@ -70,7 +70,7 @@ const FavoritesPage = () => {
                     <div className='channels-container'>
                         {favoriteGlobe.map(channel => (
                             <div key={channel.id} className='channel-item position-relative'>
-                                <Link to={`/liveGlobe/:id`} className='channel-link'>
+                                <Link to={`/liveGlobe/${channel.id}`} className='channel-link'>
                                     <div className='poster-wrapper-channels'>
                                             <img src={channel.poster} alt={channel.name} className='channels-poster-size' />
                                             <div className='play-icon-wrapper-channels'>
