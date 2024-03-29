@@ -1,52 +1,83 @@
 import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom';
-import { Channels } from '../app/assets/shared/ChannelsMain';
 import { MoviesArr } from '../app/assets/shared/MoviesMain';
+import { Channels } from '../app/assets/shared/ChannelsMain';
 import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'react-scroll-parallax';
+// import anime from 'animejs';
+
 
 const Homepage = () => {
-  const featuredMovieIds = [3, 12, 22, 33, 2, 4];
-  const featuredTVIds = [4, 6, 8, 11, 5, 12];
+  const movie1 = MoviesArr[46];
+  const movie2 = MoviesArr[3];
+  const movie3 = MoviesArr[5];
 
-  const featuredMovies = featuredMovieIds.map(id => MoviesArr.find(movie => movie.id === id));
-  const featuredTVs = featuredTVIds.map(id => Channels.find(channel => channel.id === id));
+  const channel1 = Channels[0];
+  const channel2 = Channels[10];
+  const channel3 = Channels[12];
 
   return (
     <ParallaxProvider>
-      <div className="homepage">
-        <Container>
-          <Row>
-            <Col md={6}>
-            <h1 className='featured-text'>Featured Films</h1>
-              <Parallax y={[-20, 20]} x={[-20, 20]} scale={[1, 1.5]} opacity={[1, 0]} rotate={[-10, 10]} blur={[0, 5]}>
-                <div className="featured-movies-container">
-                  {featuredMovies.map(movie => (
-                    <Link key={movie.id} to={`/movie/${movie.id}`}>
-                      <img src={movie.poster} alt={movie.name} className='featured-movie-poster' />
-                    </Link>
-                  ))}
-                </div>
-                
-              </Parallax>
-            </Col>
-            </Row>
-            <Row>
-            <Col md={6}>
-            <h1 className='featured-text'>Featured Channels</h1>
-              <Parallax y={[-20, 20]} x={[-20, 20]} scale={[1, 1.5]} opacity={[1, 0]} rotate={[-10, 10]} blur={[0, 5]}>
-                <div className="featured-tvs-container">
-                  {featuredTVs.map(tv => (
-                    <Link key={tv.id} to={`/livetv/${tv.name}`}>
-                      <img src={tv.poster} alt={tv.name} className='featured-channel-poster' />
-                    </Link>
-                  ))}
-                </div>
-              </Parallax>
-            </Col>
-          </Row>
-        </Container>
+      <div className='featmov-text'>
+        <Parallax scale={[.1, 1.5]}>
+          <h1 className='featured-text'>Featured Movies</h1>
+        </Parallax>
+      </div>
+      <div className="featmov">
+        <div className="featured-movie-container1">
+          <Parallax   scale={[1, 4]}   rotate={[0, -7]}>
+            <Link to={`/movie/${movie1.id}`}>
+              <img src={movie1.poster} alt={movie1.name} className='featured-movie-poster1' />
+            </Link>
+          </Parallax>
+        </div>
+        <div className="featured-movie-container2">
+          <Parallax scale={[1, 3]} >
+            <Link to={`/movie/${movie2.id}`}>
+              <img src={movie2.poster} alt={movie2.name} className='featured-movie-poster2' />
+            </Link>
+          </Parallax>
+        </div>
+
+        <div className="featured-movie-container3">
+          <Parallax scale={[1, 4]} rotate={[1, 4]}>
+            <Link to={`/movie/${movie3.id}`}>
+              <img src={movie3.poster} alt={movie3.name} className='featured-movie-poster3' />
+            </Link>
+          </Parallax>
+        </div>
+      </div>
+
+
+      <div className='featchannel-text'>
+        <Parallax scale={[.1, 1.5]}>
+          <h1 className='featured-text'>Featured Channels</h1>
+        </Parallax>
+      </div>
+      <div className="featchannel">
+        <div className="featured-channel-container1 me-5">
+          <Parallax   scale={[1, 8]}   rotate={[0, -11]}>
+            <Link to={`/livetv/${channel1.id}`}>
+              <img src={channel1.poster} alt={channel1.name} className='featured-channel-poster1' />
+            </Link>
+          </Parallax>
+        </div>
+        <div className="featured-channel-container2 me-5">
+          <Parallax scale={[1, 8]} >
+            <Link to={`/livetv/${channel2.id}`}>
+              <img src={channel2.poster} alt={channel2.name} className='featured-channel-poster2' />
+            </Link>
+          </Parallax>
+        </div>
+
+        <div className="featured-channel-container3">
+          <Parallax scale={[1, 8]} rotate={[1, 11]} >
+            <Link to={`/livetv/${channel3.id}`}>
+              <img src={channel3.poster} alt={channel3.name} className='featured-channel-poster3' />
+            </Link>
+          </Parallax>
+        </div>
       </div>
     </ParallaxProvider>
   );

@@ -1,13 +1,15 @@
+// * {
+//   border: 1px solid blue;
+// }
+
 @media screen and (max-width: 1300px) {
-  .you,
-  .are,
-  .beautiful,
   .couch,
   .lamp1,
   .tv {
     display: none;
   }
 }
+
 
 @import "nav-3d-objects";
 @import "featured";
