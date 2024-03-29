@@ -39,7 +39,7 @@ const LiveGlobe = () => {
                     <div className="globe-container">
                         {filteredGlobe.map(channel => (
                             <div key={channel.id} className="globe-item position-relative">
-                                <Link to={`/liveGlobe/${channel.id}`} className="globe-link">
+                                <Link to={`/liveglobe/${channel.id}`} className="globe-link">
                                     <div className="poster-wrapper-globe">
                                         <img className='globe-poster-size' src={channel.poster} alt={channel.name} />
                                         <div className="play-icon-wrapper-globe">

@@ -13,7 +13,7 @@ function Genre({ onSelectGenre, category }) {
   const genreOptions = {
     Movie: ['All', 'Comedy', 'Drama', 'Romance'],
     TV: ['All', 'Educational', 'News', 'Documentary'],
-    Globe: ['All', 'Category1', 'Category2', 'Category3']
+    Globe: ['All', 'Italy', 'England', 'Category3']
   };
 
   const selectedGenres = genreOptions[category];

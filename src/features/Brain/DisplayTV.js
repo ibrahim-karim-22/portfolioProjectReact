@@ -6,12 +6,20 @@ import { addToFavorites, removeFromFavorites } from '../../components/favorites/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
+
 
 const DisplayTV = () => {
-    const [selectedChannel, setSelectedChannel] = useState(Channels[0]);
+    const { id } = useParams();
+    const TVChannel = Channels.find(channel => channel.id === parseInt(id));
+    const [selectedChannel, setSelectedChannel] = useState(TVChannel);
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const favoriteChannels = useSelector(state => state.favorites.faveListTV);
+
+    if (!TVChannel) {
+        return <div>Error</div>
+    }
 
     const handleChannelClick = (channel) => {
         setSelectedChannel(channel);

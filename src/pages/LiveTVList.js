@@ -39,7 +39,7 @@ const ChannelsList = () => {
                     <div className="channels-container">
                         {filteredChannels.map(channel => (
                             <div key={channel.id} className="channel-item position-relative">
-                                <Link to={`/livetv/${channel.name}`} className="channel-link">
+                                <Link to={`/livetv/${channel.id}`} className="channel-link">
                                     <div className="poster-wrapper-channels">
                                         <img className='channels-poster-size' src={channel.poster} alt={channel.name} />
                                         <div className="play-icon-wrapper-channels">

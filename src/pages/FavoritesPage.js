@@ -10,7 +10,7 @@ const FavoritesPage = () => {
     const dispatch = useDispatch();
     const favoriteMovies = useSelector(state => state.favorites.faveList);
     const favoriteTV = useSelector(state => state.favorites.faveListTV);
-    const favoriteGlobe = useSelector(state => state.favorites.favelistGlobe);
+    const favoriteGlobe = useSelector(state => state.favorites.faveListGlobe);
 
     const handleRemoveFavorite = (item, type) => {
         dispatch(removeFromFavorites({ item, type }));

@@ -10,7 +10,7 @@ const DisplayMovie = () => {
     const movie = MoviesArr.find(movie => movie.id === parseInt(id));
 
     if (!movie) {
-        return <div>Loading...</div>;
+        return <div>Error</div>;
     }
 
     return (

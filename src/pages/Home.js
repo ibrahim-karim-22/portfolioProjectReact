@@ -9,7 +9,7 @@ import { Parallax } from 'react-scroll-parallax';
 
 
 const Homepage = () => {
-  const movie1 = MoviesArr[46];
+  const movie1 = MoviesArr[2];
   const movie2 = MoviesArr[3];
   const movie3 = MoviesArr[5];
 
@@ -21,7 +21,7 @@ const Homepage = () => {
     <ParallaxProvider>
       <div className='featmov-text'>
         <Parallax scale={[.1, 1.5]}>
-          <h1 className='featured-text'>Featured Movies</h1>
+          <h1 className='featured-text'>Featured Romance</h1>
         </Parallax>
       </div>
       <div className="featmov">

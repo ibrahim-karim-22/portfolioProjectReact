@@ -6,16 +6,24 @@ import { addToFavorites, removeFromFavorites } from '../../components/favorites/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from 'react-router-dom';
 
 const DisplayGlobe = () => {
-    const [selectedGlobeChannel, setSelectedGlobeChannel] = useState(Globe[0]);
+    const { id } = useParams();
+    const GlobeChannel = Globe.find(channel => channel.id === parseInt(id));
+    const [selectedGlobeChannel, setSelectedGlobeChannel] = useState(GlobeChannel);
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const favoriteGlobe = useSelector(state => state.favorites.faveListGlobe);
 
-    const handleChannelClick = (channel) => {
-        setSelectedGlobeChannel(channel);
-    };
+    if (!GlobeChannel) {
+        return <div>Error</div>
+    }
+    
+
+const handleChannelClick = (channel) => {
+    setSelectedGlobeChannel(channel);
+};
 
     const isFavorite = (channelId) => {
         return favoriteGlobe.some(channel => channel.id === channelId);
@@ -35,7 +43,7 @@ const DisplayGlobe = () => {
             <Row>
                 <Col>
                     <div className="tv-guide-section">
-                        <h2 className='channels-text mt-5'>TV Guide</h2>
+                        <h2 className='channels-text mt-5'>Globe Guide</h2>
                         <div className="tv-guide-scrollable-container">
                             {Globe.map(channel => (
                                 <div key={channel.id} className="channel-item position-relative">
