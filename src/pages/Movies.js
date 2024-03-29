@@ -32,7 +32,7 @@ const Movies = () => {
     return (
         <Container>
             <Row>
-                <Genre onSelectGenre={setSelectedGenre} isMovie />
+                <Genre onSelectGenre={setSelectedGenre} category="Movie" />
             </Row>
             <Row>
                 <Col>

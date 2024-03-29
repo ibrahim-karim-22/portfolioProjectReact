@@ -1,8 +1,7 @@
-// Genre.js
 import React, { useState } from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-function Genre({ onSelectGenre, isMovie }) {
+function Genre({ onSelectGenre, category }) {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const toggle = () => setDropdownOpen(prevState => !prevState);
 
@@ -11,17 +10,22 @@ function Genre({ onSelectGenre, isMovie }) {
     setDropdownOpen(false);
   };
 
-  const genreOptions = isMovie
-    ? ['All', 'Comedy', 'Drama', 'Romance']
-    : ['All', 'Educational', 'News', 'Documentary']; 
+  const genreOptions = {
+    Movie: ['All', 'Comedy', 'Drama', 'Romance'],
+    TV: ['All', 'Educational', 'News', 'Documentary'],
+    Globe: ['All', 'Category1', 'Category2', 'Category3']
+  };
+
+  const selectedGenres = genreOptions[category];
+  const genreTitle = category === 'Movie' ? 'Movie Genre' : category === 'TV' ? 'TV Genre' : 'Globe Genre';
 
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
       <DropdownToggle caret size="md" className="mt-5 mb-5">
-        {isMovie ? 'Movie Genre' : 'TV Genre'}
+        {genreTitle}
       </DropdownToggle>
       <DropdownMenu>
-        {genreOptions.map(genre => (
+        {selectedGenres.map(genre => (
           <DropdownItem key={genre} onClick={() => handleGenreSelection(genre)}>
             {genre}
           </DropdownItem>

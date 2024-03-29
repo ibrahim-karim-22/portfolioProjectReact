@@ -1,5 +1,7 @@
-const LiveGlobe = () => {
-    return <h1 style={{color: 'pink'}}>Loading...</h1>
+import LiveGlobe from "./GlobeList";
+
+const LiveGlobeList = () => {
+    return <LiveGlobe />
 };
 
-export default LiveGlobe;
+export default LiveGlobeList;

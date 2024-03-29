@@ -58,14 +58,14 @@ const Homepage = () => {
       <div className="featchannel">
         <div className="featured-channel-container1 me-5">
           <Parallax   scale={[1, 8]}   rotate={[0, -11]}>
-            <Link to={`/livetv/${channel1.id}`}>
+            <Link to={`/livetv${channel1.name}`}>
               <img src={channel1.poster} alt={channel1.name} className='featured-channel-poster1' />
             </Link>
           </Parallax>
         </div>
         <div className="featured-channel-container2 me-5">
           <Parallax scale={[1, 8]} >
-            <Link to={`/livetv/${channel2.id}`}>
+            <Link to={`/livetv`}>
               <img src={channel2.poster} alt={channel2.name} className='featured-channel-poster2' />
             </Link>
           </Parallax>
@@ -73,7 +73,7 @@ const Homepage = () => {
 
         <div className="featured-channel-container3">
           <Parallax scale={[1, 8]} rotate={[1, 11]} >
-            <Link to={`/livetv/${channel3.id}`}>
+            <Link to={`/livetv`}>
               <img src={channel3.poster} alt={channel3.name} className='featured-channel-poster3' />
             </Link>
           </Parallax>

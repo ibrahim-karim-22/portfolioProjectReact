@@ -5,6 +5,7 @@ const favoritesSlice = createSlice({
     initialState: {
         faveList: [],
         faveListTV: [],
+        faveListGlobe: [],
     },
     reducers: {
         addToFavorites(state, action) {
@@ -15,6 +16,8 @@ const favoritesSlice = createSlice({
                 state.faveList = [...state.faveList, newItem]; 
             } else if (type === 'tvChannel') {
                 state.faveListTV = [...state.faveListTV, newItem]; 
+            } else if (type === 'globe') {
+                state.faveListGlobe = [...state.faveListGlobe, newItem];
             }
         },
         removeFromFavorites(state, action) {
@@ -25,6 +28,8 @@ const favoritesSlice = createSlice({
                 state.faveList = state.faveList.filter(movie => movie.id !== item.id);
             } else if (type === 'tvChannel') {
                 state.faveListTV = state.faveListTV.filter(channel => channel.id !== item.id);
+            } else if (type === 'globe') {
+                state.faveListGlobe = state.faveListGlobe.filter(channel => channel.id !== item.id);
             }
         },
     },

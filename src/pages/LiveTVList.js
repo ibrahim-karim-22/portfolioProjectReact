@@ -32,7 +32,7 @@ const ChannelsList = () => {
     return (
         <Container>
             <Row>
-                <Genre onSelectGenre={setSelectedGenre} />
+                <Genre onSelectGenre={setSelectedGenre} category="TV" />
             </Row>
             <Row>
                 <Col md='12'>

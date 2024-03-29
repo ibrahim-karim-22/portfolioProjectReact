@@ -10,6 +10,7 @@ const FavoritesPage = () => {
     const dispatch = useDispatch();
     const favoriteMovies = useSelector(state => state.favorites.faveList);
     const favoriteTV = useSelector(state => state.favorites.faveListTV);
+    const favoriteGlobe = useSelector(state => state.favorites.favelistGlobe);
 
     const handleRemoveFavorite = (item, type) => {
         dispatch(removeFromFavorites({ item, type }));
@@ -59,7 +60,29 @@ const FavoritesPage = () => {
                                     <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                 </div>
                             </div>
-
+                        ))}
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <h2 className='favorite-headers'>Favorites from Globe</h2>
+                    <div className='channels-container'>
+                        {favoriteGlobe.map(channel => (
+                            <div key={channel.id} className='channel-item position-relative'>
+                                <Link to={`/liveGlobe/:id`} className='channel-link'>
+                                    <div className='poster-wrapper-channels'>
+                                            <img src={channel.poster} alt={channel.name} className='channels-poster-size' />
+                                            <div className='play-icon-wrapper-channels'>
+                                                <FontAwesomeIcon icon={faPlayCircle} className='play-icon' />
+                                            </div>
+                                        </div>
+                                        <div className='channel-overlay'></div>
+                                </Link>
+                                <div onClick={() => handleRemoveFavorite(channel, 'globe')} className='remove-favorite-button'>
+                                    <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
+                                </div>
+                            </div>
                         ))}
                     </div>
                 </Col>
