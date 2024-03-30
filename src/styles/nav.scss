@@ -9,6 +9,12 @@
   text-shadow: black 2px 2px 2px;
   font-optical-sizing: auto;
   font-size: 11px 0.3s ease;
+  border: 2px black solid;
+  border-radius: 3px;
+  background-color: red;
+  border-width: 2px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 1); 
+  
 }
 .nav-btn:hover {
   color: rgb(255, 0, 0);

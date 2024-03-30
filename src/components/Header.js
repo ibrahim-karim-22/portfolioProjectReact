@@ -11,7 +11,7 @@ import darkBack from '../app/assets/images/darkBack.jpg';
 import title from '../app/assets/images/title.png';
 import UserLoginForm from "./Login/UserLogin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -35,32 +35,41 @@ const Header = () => {
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
+                <UserLoginForm />
                 <Nav navbar>
                     
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                            <h3 className="nav-btn ms-5">Home</h3>
+                            <h3 className="nav-btn">Home</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/movies'>
-                            <h3 className="nav-btn ms-5">Movies</h3>
+                            <h3 className="nav-btn">Movies</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/livetv'>
-                            <h3 className="nav-btn ms-5">TV</h3>
+                            <h3 className="nav-btn">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/liveglobe'>
-                            <h3 className="nav-btn ms-5">Globe</h3>
+                            <h3 className="nav-btn">Globe</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-btn-fave' to='/favorites'>
-                            <h3 className="nav-btn ms-5">Favorites</h3>
+                        <NavLink className='nav-link' to='/favorites'>
+                            <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
+
                         </NavLink>
+                    </NavItem>
+                            <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode}>Light</h3>
+                    <NavItem>
+                    
+                    <NavItem>
+</NavItem>
+
                     </NavItem>
                 </Nav>
             </Collapse>
@@ -75,14 +84,8 @@ const Header = () => {
                 )}
             </div>
            
-               
-            
-            <UserLoginForm />
         </Navbar>
-        
-        
     )
-    
 }
 
 export default Header;

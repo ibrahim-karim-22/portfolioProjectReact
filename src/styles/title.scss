@@ -1,5 +1,8 @@
 .title-img {
   width: 444px;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
 }
 .title-img {
   transition: transform 0.5s ease;
@@ -8,5 +11,6 @@
 .title-img:hover {
   transform: rotate(5deg);
 }
+
 
 

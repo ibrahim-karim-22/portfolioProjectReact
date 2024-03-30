@@ -25,6 +25,7 @@ const Homepage = () => {
 
   return (
     <ParallaxProvider>
+      <div className='featured-container'>
       <div className='featmov-text'>
         <Parallax scale={[.1, 1.5]}>
           <h1 className='featured-text'>Featured</h1>
@@ -115,6 +116,7 @@ const Homepage = () => {
             </Link>
           </Parallax>
         </div>
+      </div>
       </div>
     </ParallaxProvider>
   );
