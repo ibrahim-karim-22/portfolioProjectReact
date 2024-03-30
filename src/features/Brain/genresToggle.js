@@ -7,17 +7,17 @@ function Genre({ onSelectGenre, category }) {
 
   const handleGenreSelection = genre => {
     onSelectGenre(genre);
-    setDropdownOpen(false);
+    setDropdownOpen(true);
   };
 
   const genreOptions = {
     Movie: ['All', 'Comedy', 'Drama', 'Romance'],
     TV: ['All', 'Educational', 'News', 'Documentary'],
-    Globe: ['All', 'Italy', 'England', 'Category3']
+    Globe: ['All', 'Italy', 'England', 'United States', 'Netherlands', 'Brazil', 'Japan']
   };
 
   const selectedGenres = genreOptions[category];
-  const genreTitle = category === 'Movie' ? 'Movie Genre' : category === 'TV' ? 'TV Genre' : 'Globe Genre';
+  const genreTitle = category === 'Movie' ? 'Movie Genre' : category === 'TV' ? 'TV Genre' : 'Country';
 
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>

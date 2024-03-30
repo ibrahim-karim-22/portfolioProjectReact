@@ -56,6 +56,7 @@
     background-color: rgba(0, 0, 0, 0.5); 
     opacity: 0; 
     transition: opacity 0.3s ease;
+    
 }
 
 .favorite-icon-globe {
@@ -76,4 +77,9 @@
 }
 .favorite-icon-globe:hover {
     color: gray;
+}
+
+.city-name {
+    color: pink;
+    // margin-top: -22px;
 }

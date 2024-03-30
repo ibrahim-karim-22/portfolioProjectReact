@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Channels } from '../../app/assets/shared/ChannelsMain';
 import { Container, Row, Col } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
@@ -16,6 +16,7 @@ const DisplayTV = () => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const favoriteChannels = useSelector(state => state.favorites.faveListTV);
+
 
     if (!TVChannel) {
         return <div>Error</div>

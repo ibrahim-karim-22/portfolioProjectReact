@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import Genre from '../features/Brain/genresToggle';
 
+
 const ChannelsList = () => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
@@ -31,6 +32,7 @@ const ChannelsList = () => {
 
     return (
         <Container>
+            
             <Row>
                 <Genre onSelectGenre={setSelectedGenre} category="TV" />
             </Row>
@@ -48,6 +50,7 @@ const ChannelsList = () => {
                                     </div>
                                     <div className='channel-overlay'></div>
                                 </Link>
+                                <div className='city-name mb-5'>{channel.name}</div>
                                 {currentUser && (
                                     <div className='favorite-icon-channels' onClick={() => handleFavoriteClick(channel, 'tvChannel')}>
                                         <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white'}} />
