@@ -29,13 +29,14 @@ const Header = () => {
     }, [lightMode]);
 
     return (
-        <Navbar dark color={lightMode ? 'dark' : 'warning'} sticky='top' expand='lg'>
+        <Navbar dark color={lightMode ? 'dark' : 'warning'} sticky='top' expand='xxl'>
             <NavbarBrand className='ms-0' href='/'>
                 <img className="title-img" src={title} alt="Untitled" />
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav navbar>
+                    
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
                             <h3 className="nav-btn ms-5">Home</h3>
@@ -56,20 +57,32 @@ const Header = () => {
                             <h3 className="nav-btn ms-5">Globe</h3>
                         </NavLink>
                     </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-btn-fave' to='/favorites'>
+                            <h3 className="nav-btn ms-5">Favorites</h3>
+                        </NavLink>
+                    </NavItem>
                 </Nav>
             </Collapse>
-            <img className="lamp1" src={lightMode ? lampOff : lamp} alt="Light Mode lamp toggle" onClick={toggleLightMode} />
+          
+                <img className="lamp1" src={lightMode ? lampOff : lamp} alt="Light Mode lamp toggle" onClick={toggleLightMode} />
             <div className="favrites-icon-main">
                 {currentUser && (
                     <Link to={`/favorites`}>
                         <img className="couch" src={couch} alt="favorites icon" />
-                        <p className="favorites-count">{favoritesCount}</p>
+                        <div className="favorites-count">{favoritesCount}</div>
                     </Link>
                 )}
             </div>
+           
+               
+            
             <UserLoginForm />
         </Navbar>
+        
+        
     )
+    
 }
 
 export default Header;

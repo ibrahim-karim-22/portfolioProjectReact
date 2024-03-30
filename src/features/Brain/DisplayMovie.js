@@ -1,7 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { MoviesArr } from "../../app/assets/shared/MoviesMain";
-import { Container, Row, Col } from 'reactstrap'; 
+import { Container, Row, Col, CardBody, Card} from 'reactstrap'; 
+
 
 const DisplayMovie = () => {
     const { id } = useParams();
@@ -17,7 +18,15 @@ const DisplayMovie = () => {
         <Container>
             <Row>
                 <Col>
-                    <h1>{movie.title}</h1>
+                    <h1 className='movie-name-text'>{movie.name}</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col>
+                    <video className='display-movie' width="750" height="510" controls>
+                        <source src={movie.video} type="video/mp4" />
+                        Your browser does not support this video type.
+                    </video>
                 </Col>
             </Row>
             <Row>
@@ -37,17 +46,10 @@ const DisplayMovie = () => {
                     <p>Duration: {movie.duration}</p>
                 </Col>
                 <Col md='1'>
-                    <p>Cast: <br />{movie.cast}</p>
+                    <p>Cast: <br />{movie.cast.join(', ')}</p>
                 </Col>
             </Row>
-            <Row>
-                <Col>
-                    <video className='display-movie' width="550" height="520" controls>
-                        <source src={movie.video} type="video/mp4" />
-                        Your browser does not support this video type.
-                    </video>
-                </Col>
-            </Row>
+       
         </Container>
     );
 };

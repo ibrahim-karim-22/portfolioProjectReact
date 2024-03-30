@@ -2,13 +2,7 @@
 //   border: 1px solid blue;
 // }
 
-@media screen and (max-width: 1300px) {
-  .couch,
-  .lamp1,
-  .tv {
-    display: none;
-  }
-}
+
 
 
 @import "nav-3d-objects";
@@ -23,3 +17,5 @@
 @import "movie-page";
 @import "tv-posters";
 @import "globe-posters";
+@import "scroll-arrows";
+@import "viewports";

@@ -1,0 +1,50 @@
+/*TITLE IMAGE*/
+@media only screen and (max-width: 600px) {
+    .title-img {
+        transform: scale(44%);
+        align-items: start;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .title-img {
+        transform: scale(80%);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .title-img {
+        transform: scale(100%);
+    }
+}
+
+
+@media only screen and (min-width: 700px) {
+.nav-btn-fave {
+    display: none;
+}
+}
+
+/*TITLE IMAGE*/
+@media only screen and (max-width: 1400px) {
+    .couch,
+    .tv  {
+        display: none;
+     
+    }
+}
+
+// @media only screen and (min-width: 1400px) {
+//     .couch,
+//     .tv {
+//         transform: scale(50%);
+//         transform: translateX(-55%);
+//     }
+// }
+
+// @media only screen and (max-width: 600px) {
+
+//     .lamp1 {
+//         transform: scale(55%);
+//     }
+// }

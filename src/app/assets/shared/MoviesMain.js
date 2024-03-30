@@ -6,7 +6,7 @@ export const MoviesArr = [
         video: "https://publicdomainmovie.net/movie.php?id=CC_1916_08_07_One_A_M&type=.mp4",
         director: "Charlie Chaplin",
         genre: ["Comedy"],
-        cast: ["Charlie Chaplin - Drunk", "Albert Austin - Taxi driver"],
+        cast: ["Charlie Chaplin - Drunk ", "Albert Austin - Taxi driver"],
         plot: "A drunken man struggles to find his way home after a night of revelry.",
         duration: '21:30',
         poster: "https://upload.wikimedia.org/wikipedia/commons/f/fa/One_A.M._poster.jpg",

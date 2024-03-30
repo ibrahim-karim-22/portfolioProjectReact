@@ -2,21 +2,8 @@
   margin: 22px;
 }
 .nav-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  color: rgb(255, 251, 0);
-}
-
-.nav-btn {
   color: rgb(255, 255, 255);
   transition: color 0.3s ease;
-}
-
-.nav-btn:hover {
-  color: rgb(255, 0, 0);
-}
-.nav-btn {
   font-family: "Michroma", sans-serif;
   font-weight: 700;
   text-shadow: black 2px 2px 2px;
@@ -24,5 +11,7 @@
   font-size: 11px 0.3s ease;
 }
 .nav-btn:hover {
+  color: rgb(255, 0, 0);
   transform: rotate(1deg);
 }
+

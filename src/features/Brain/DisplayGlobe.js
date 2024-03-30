@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Globe } from '../../app/assets/shared/GlobeMain';
 import { Container, Row, Col } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../../components/favorites/favoritesSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
 
@@ -15,6 +15,8 @@ const DisplayGlobe = () => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const favoriteGlobe = useSelector(state => state.favorites.faveListGlobe);
+    const scrollContainerRef = useRef(null);
+
 
     if (!GlobeChannel) {
         return <div>Error</div>
@@ -38,13 +40,32 @@ const handleChannelClick = (channel) => {
         }
     };
 
+    const handleScrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft -= 1250;
+        }
+    };
+    const handleScrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft += 1250; 
+        }
+    }
+
     return (
         <Container>
             <Row>
                 <Col>
                     <div className="tv-guide-section">
                         <h2 className='channels-text mt-5'>Globe Guide</h2>
-                        <div className="tv-guide-scrollable-container">
+                        <div className="scroll-arrows">
+                            <div className="arrow left" onClick={handleScrollLeft}>
+                                <FontAwesomeIcon icon={faArrowLeft} />
+                            </div>
+                            <div className="arrow right" onClick={handleScrollRight}>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </div>
+                        </div>
+                        <div className="tv-guide-scrollable-container" ref={scrollContainerRef}>
                             {Globe.map(channel => (
                                 <div key={channel.id} className="channel-item position-relative">
                                     <div className='channel-link'>
@@ -54,6 +75,7 @@ const handleChannelClick = (channel) => {
                                             <FontAwesomeIcon icon={faPlayCircle} className="play-icon" />
                                         </div>
                                         <div className='channel-overlay'></div></div>
+                                        <div className='city-name'>{channel.name}</div>
                                         {currentUser && (
                                             <div className='favorite-icon-channels' onClick={() => handleFavoriteClick(channel, 'globe')}>
                                                 <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white'}} />
@@ -70,10 +92,10 @@ const handleChannelClick = (channel) => {
                 <Col>
                     <div className="video-player-section mt-5">
                         <h2 className='channels-text'>{selectedGlobeChannel.name}</h2>
-                        <div className='channel-display'>
+                        <div className='channel-display-globe'>
                             <iframe
-                                width="560"
-                                height="315"
+                                width="760"
+                                height="427"
                                 src={selectedGlobeChannel.channel}
                                 title="YouTube video player"
                                 frameBorder="0"

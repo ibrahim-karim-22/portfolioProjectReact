@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Channels } from '../../app/assets/shared/ChannelsMain';
 import { Container, Row, Col } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../../components/favorites/favoritesSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
 
@@ -16,7 +16,7 @@ const DisplayTV = () => {
     const dispatch = useDispatch();
     const currentUser = useSelector(state => state.user.currentUser);
     const favoriteChannels = useSelector(state => state.favorites.faveListTV);
-
+    const scrollContainerRef = useRef(null);
 
     if (!TVChannel) {
         return <div>Error</div>
@@ -38,6 +38,20 @@ const DisplayTV = () => {
             dispatch(addToFavorites(payload));
         }
     };
+    
+    
+
+    const handleScrollLeft = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft -= 1250;
+        }
+    };
+    const handleScrollRight = () => {
+        if (scrollContainerRef.current) {
+            scrollContainerRef.current.scrollLeft += 1250; 
+        }
+    }
+
 
     return (
         <Container>
@@ -45,7 +59,15 @@ const DisplayTV = () => {
                 <Col>
                     <div className="tv-guide-section">
                         <h2 className='channels-text mt-5'>TV Guide</h2>
-                        <div className="tv-guide-scrollable-container">
+                        <div className="scroll-arrows">
+                            <div className="arrow left" onClick={handleScrollLeft}>
+                                <FontAwesomeIcon icon={faArrowLeft} />
+                            </div>
+                            <div className="arrow right" onClick={handleScrollRight}>
+                                <FontAwesomeIcon icon={faArrowRight} />
+                            </div>
+                        </div>
+                        <div className="tv-guide-scrollable-container" ref={scrollContainerRef}>
                             {Channels.map(channel => (
                                 <div key={channel.id} className="channel-item position-relative">
                                     <div className='channel-link'>
@@ -55,6 +77,7 @@ const DisplayTV = () => {
                                             <FontAwesomeIcon icon={faPlayCircle} className="play-icon" />
                                         </div>
                                         <div className='channel-overlay'></div></div>
+                                        <div className='city-name'>{channel.name}</div>
                                         {currentUser && (
                                             <div className='favorite-icon-channels' onClick={() => handleFavoriteClick(channel, 'tvChannel')}>
                                                 <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white'}} />
@@ -64,6 +87,7 @@ const DisplayTV = () => {
                                 </div>
                             ))}
                         </div>
+                        
                     </div>
                 </Col>
             </Row>
