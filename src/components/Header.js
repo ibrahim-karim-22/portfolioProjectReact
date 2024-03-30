@@ -38,22 +38,22 @@ const Header = () => {
                 <Nav navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/'>
-                            <h3 className="nav-btn ms-5">Home<FontAwesomeIcon icon={faStar} /></h3>
+                            <h3 className="nav-btn ms-5">Home</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/movies'>
-                            <h3 className="nav-btn ms-5">Movies<FontAwesomeIcon icon={faStar} /> </h3>
+                            <h3 className="nav-btn ms-5">Movies</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/livetv'>
-                            <h3 className="nav-btn ms-5">TV<FontAwesomeIcon icon={faStar} /></h3>
+                            <h3 className="nav-btn ms-5">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/liveglobe'>
-                            <h3 className="nav-btn ms-5">Globe<FontAwesomeIcon icon={faStar} /></h3>
+                            <h3 className="nav-btn ms-5">Globe</h3>
                         </NavLink>
                     </NavItem>
                 </Nav>

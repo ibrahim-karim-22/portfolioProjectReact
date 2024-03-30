@@ -191,7 +191,7 @@ export const Channels = [
     },
     {
         id: 14,
-        name: 'euro news',
+        name: 'euronews',
         language: ['English'],
         description: `Euronews is a leading international news channel headquartered in Lyon, France, with additional offices and studios across Europe.
                     It provides 24/7 coverage of global news, current affairs, politics, business, culture, sports, and more. Euronews aims to offer 
