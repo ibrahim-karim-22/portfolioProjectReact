@@ -11,7 +11,7 @@ import darkBack from '../app/assets/images/darkBack.jpg';
 import title from '../app/assets/images/title.png';
 import UserLoginForm from "./Login/UserLogin";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -30,7 +30,7 @@ const Header = () => {
 
     return (
         <Navbar dark color={lightMode ? 'dark' : 'warning'} sticky='top' expand='xxl'>
-            <NavbarBrand className='ms-0' href='/'>
+            <NavbarBrand href='/'>
                 <img className="title-img" src={title} alt="Untitled" />
             </NavbarBrand>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
@@ -58,17 +58,19 @@ const Header = () => {
                             <h3 className="nav-btn">Globe</h3>
                         </NavLink>
                     </NavItem>
+                    {currentUser && (
                     <NavItem>
                         <NavLink className='nav-link' to='/favorites'>
                             <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
 
                         </NavLink>
                     </NavItem>
+                    )}
                             <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode}>Light</h3>
                     <NavItem>
                     
                     <NavItem>
-</NavItem>
+                    </NavItem>
 
                     </NavItem>
                 </Nav>

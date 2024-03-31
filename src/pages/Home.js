@@ -2,11 +2,17 @@ import React from 'react';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { Link } from 'react-router-dom';
 import { MoviesArr } from '../app/assets/shared/MoviesMain';
+import { useSelector, useDispatch } from 'react-redux';
+import { addToFavorites, removeFromFavorites } from '../components/favorites/favoritesSlice';
 import { Channels } from '../app/assets/shared/ChannelsMain';
 import { Globe } from '../app/assets/shared/GlobeMain';
 import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'react-scroll-parallax';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 // import anime from 'animejs';
+
+
 
 
 const Homepage = () => {
@@ -22,8 +28,26 @@ const Homepage = () => {
   const globe2 = Globe[2];
   const globe3 = Globe[3];
 
+const currentUser = useSelector(state => state.user.currentUser);
+const favoriteMovies = useSelector(state => state.favorites.faveList);
+const dispatch = useDispatch();
+
+const isFavorite = (movieId) => {
+  return favoriteMovies.some(movie => movie.id === movieId);
+};
+
+const handleFavoriteClick = (item, type) => {
+  const payload = { item, type };
+  if (isFavorite(item.id)) {
+      dispatch(removeFromFavorites(payload));
+  } else {
+      dispatch(addToFavorites(payload));
+  }
+};
+
 
   return (
+    <>
     <ParallaxProvider>
       <div className='featured-container'>
       <div className='featmov-text'>
@@ -119,6 +143,47 @@ const Homepage = () => {
       </div>
       </div>
     </ParallaxProvider>
+    <Container>
+      <Row>
+        <Col>
+          <h2 className='mt-3'>Featured</h2>
+        </Col>
+      </Row>
+        <Row>
+          <Col>
+          <div className='phone-img-container'>
+            <div className='phone-img-item'>
+          <Link to={`/movie/${movie1.id}`} className='phone-link'>
+            <div className='phone-poster-wrapper'>
+              <img src={movie1.poster} alt={movie1.name} className='phone-poster-size' />
+              <div className='phone-play-wrapper'>
+                <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
+              </div>
+              </div>
+              <div className='phone-overlay'></div>
+            </Link>
+        {currentUser && (
+                        <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(movie1, 'movie')}>
+                            <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie1.id) ? 'yellow' : 'white' }} />
+                        </div>
+                  )}
+            </div>
+          </div>
+          </Col>
+          <Col>
+          <Link to={`/movie/${movie2.id}`}>
+              <img src={movie2.poster} alt={movie2.name} className='phone-img-size' />
+            </Link>
+          </Col>
+          <Col>
+          <Link to={`/movie/${movie3.id}`}>
+              <img src={movie3.poster} alt={movie3.name} className='phone-img-size' />
+            </Link>
+          </Col>
+        </Row>
+      </Container>
+    </>
+    
   );
 };
 

@@ -1,20 +1,6 @@
-/*TITLE IMAGE*/
 @media only screen and (max-width: 600px) {
     .title-img {
         transform: scale(44%);
-        align-items: start;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .title-img {
-        transform: scale(80%);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .title-img {
-        right: 122px;
     }
 }
 
@@ -26,7 +12,7 @@
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     .couch,
     .lamp1,
     .favorites-count  {
@@ -42,10 +28,10 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1240px) {
 
     .featured-container {
-        transform: scale(.2);
+       display: none;
         
     }
 }
