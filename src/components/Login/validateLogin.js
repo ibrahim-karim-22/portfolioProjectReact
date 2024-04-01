@@ -15,6 +15,6 @@
         errors.password = 'Password must be at least 8 characters long.'
     }
 
-    return validateUserLogin;
+    return errors;
 }
 export default validateUserLogin;

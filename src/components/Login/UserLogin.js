@@ -12,11 +12,13 @@ import {
 } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import validateUserLogin from "./validateLogin";
+import { useNavigate } from "react-router-dom";
 
 const UserLoginForm = () => {
     const [loginModalOpen, setLoginModalOpen] = useState(false);
     const currentUser = useSelector(selectCurrentUser);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleLogin = (values) => {
         console.log(values);
@@ -31,15 +33,17 @@ const UserLoginForm = () => {
 
     const handleLogout = () => {
         dispatch(setCurrentUser(null));
+
+        navigate('/')
     };
 
     return (
         <>
             <span className="navbar-text ml-auto">
                 {currentUser ? (
-                    <div className="logout-btn" >
-                        <span className="username-span">{currentUser.username}</span>
-                        <Button outline onClick={handleLogout}>
+                    <div className="logout-btn text-danger" >
+                        <span className="username-span me-3">{currentUser.username}</span>
+                        <Button onClick={handleLogout}  className="bg-danger me-5">
                            LOGOUT
                         </Button>
                     </div>
@@ -55,9 +59,9 @@ const UserLoginForm = () => {
                     </Button>
                 )}
             </span>
-            <Modal isOpen={loginModalOpen}>
+            <Modal className='text-muted' isOpen={loginModalOpen}>
                 <ModalHeader toggle={() => setLoginModalOpen(false)}>Login</ModalHeader>
-                <ModalBody>
+                <ModalBody style={{ backgroundColor: '#FFC0CB' }}>
                     <Formik
                         initialValues={{ username: "", password: "" }}
                         onSubmit={handleLogin}
@@ -88,7 +92,7 @@ const UserLoginForm = () => {
                                     {(msg) => <p className="text-danger">{msg}</p>}
                                 </ErrorMessage>
                             </FormGroup>
-                            <Button type="submit" color="primary">
+                            <Button type="submit" color="warning">
                                 Login
                             </Button>
                         </Form>

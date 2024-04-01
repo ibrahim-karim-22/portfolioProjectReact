@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { Globe } from '../../app/assets/shared/GlobeMain';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardText, CardSubtitle, CardTitle } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../../components/favorites/favoritesSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -90,8 +90,14 @@ const handleChannelClick = (channel) => {
             </Row>
             <Row>
                 <Col>
+                <Card className='card-main bg-black'>
+                    <CardBody>
+                        <CardTitle tag='h1' className='text-warning'>
+                        {selectedGlobeChannel.name}
+                        </CardTitle>
+                        <CardText>
                     <div className="video-player-section">
-                        <h2 className='channels-text'>{selectedGlobeChannel.name}</h2>
+                        
                         <div className='channel-display-globe'>
                             <div className='video-container'>
                             <iframe
@@ -106,6 +112,10 @@ const handleChannelClick = (channel) => {
                             </div>
                         </div>
                     </div>
+
+                        </CardText>
+                    </CardBody>
+                </Card>
                 </Col>
             </Row>
         </Container>

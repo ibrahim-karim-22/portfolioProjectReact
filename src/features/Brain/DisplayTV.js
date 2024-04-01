@@ -1,12 +1,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Channels } from '../../app/assets/shared/ChannelsMain';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../../components/favorites/favoritesSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 import { useParams } from 'react-router-dom';
+
 
 
 const DisplayTV = () => {
@@ -93,8 +94,16 @@ const DisplayTV = () => {
             </Row>
             <Row>
                 <Col>
-                    <div className="video-player-section">
-                        <h2 className='channels-text'>{selectedChannel.name}</h2>
+                <Card className='card-main bg-dark'>
+                    <CardBody>
+                        <CardTitle tag='h1' className='text-warning'>
+                            {selectedChannel.name} 
+                            </CardTitle>
+                            <CardSubtitle tag='h3' className='text-muted'>
+                                {selectedChannel.genre.join(', ')}
+                                </CardSubtitle>
+                            <CardSubtitle tag='h3' className='text-muted mt-1'>{selectedChannel.language}</CardSubtitle>
+                                <CardText>  <div className="video-player-section">
                         <div className='channel-display'>
                             <div className='video-container'>
                             <iframe
@@ -108,12 +117,12 @@ const DisplayTV = () => {
                             ></iframe>
                             </div>
                         </div>
-                    </div>
-                </Col>
-                <Col className='mt-5'>
-                    <p>{selectedChannel.description}</p>
-                    <p>{selectedChannel.language}</p>
-                    <p>{selectedChannel.genre}</p>
+                    </div> </CardText>
+                    <CardText tag='h4' className='text-light'>
+                        {selectedChannel.description}
+                    </CardText>
+                    </CardBody>
+                </Card>
                 </Col>
             </Row>
         </Container>

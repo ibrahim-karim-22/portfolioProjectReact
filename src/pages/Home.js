@@ -10,6 +10,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'react-scroll-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+
 // import anime from 'animejs';
 
 
@@ -21,7 +22,7 @@ const Homepage = () => {
   const movie3 = MoviesArr[5];
 
   const channel1 = Channels[0];
-  const channel2 = Channels[11];
+  const channel2 = Channels[4];
   const channel3 = Channels[12];
 
   const globe1 = Globe[1];

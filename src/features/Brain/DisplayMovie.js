@@ -1,9 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { MoviesArr } from "../../app/assets/shared/MoviesMain";
-import { Container, Row, Col, CardBody, Card, CardTitle, CardText, CardSubtitle, Button } from 'reactstrap';
+import { Container, Row, Col, CardBody, Card, CardTitle, CardText, CardSubtitle } from 'reactstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToFavorites, removeFromFavorites } from '../../components/favorites/favoritesSlice';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -81,17 +83,18 @@ const DisplayMovie = () => {
                             </CardText>
                             <CardText className='text-muted mt-1' tag='h4'>
                               Trivia:  <p className='text-light'>{movie.trivia}</p> 
-                            </CardText>
-                            {/* {currentUser && (
-                                 <Button onClick={handleFavoriteClick(movie, 'movie')}>
-                                 {isFavorite ? "Remove from Favorites" : "Add to Favorites"}
-                             </Button>
-                             
-                            )} */}
-                           
+                            </CardText>    
+                            </Col>
+                            </Row>
+                            {currentUser && (
+                            <Row>
+                            <Col>
+                                    <div className='favorite-icon' onClick={() => handleFavoriteClick(movie, 'movie')}>
+                                        <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie.id) ? 'yellow' : 'white'}} />
+                                    </div>
                                 </Col>
                             </Row>
-                           
+                            )}
                         </CardBody>
                     </Card>
                 </Col>

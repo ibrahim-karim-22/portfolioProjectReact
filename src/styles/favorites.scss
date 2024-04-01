@@ -21,15 +21,23 @@
 }
 
 .favorite-headers {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 106, 255);
     font-family: "Caveat", cursive;
     font-size: 100px;
+    text-shadow: black 2px 2px 2px;
 }
 
 .favorites-count {
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    text-shadow: black 2px 2px 2px;
+    color: rgb(255, 0, 0);
+    font-size: 22px;
+    font-weight: 900;
+    text-shadow: black 1px 1px 2px;
+    position: absolute;
+    right: 55px;
+    z-index: -1;
+}
+.favorites-link {
+    text-decoration: none;
 }
 
 .favorite-icon-tvguide {

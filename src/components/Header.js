@@ -23,6 +23,10 @@ const Header = () => {
     const toggleLightMode = () => {
         setLightMode(prevMode => !prevMode);
     };
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+    
 
     useEffect(() => {
         const body = document.body;
@@ -30,7 +34,7 @@ const Header = () => {
     }, [lightMode]);
 
     return (
-        <Navbar dark color={lightMode ? 'dark' : 'warning'} sticky='top' expand='xxl'>
+        <Navbar dark color={lightMode ? 'black' : 'warning'} sticky='top' expand='xxl'>
             <NavbarBrand href='/'>
                 <img className="title-img" src={title} alt="Untitled" />
             </NavbarBrand>
@@ -39,34 +43,34 @@ const Header = () => {
                 <UserLoginForm />
                 <Nav navbar>
                     <NavItem>
-                        <NavLink className='nav-link' to='/' onClick={() => setMenuOpen(!menuOpen)}>
+                        <NavLink className='nav-link' to='/'  onClick={closeMenu}>
                             <h3 className="nav-btn">Home</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/movies'  onClick={() => setMenuOpen(!menuOpen)}>
+                        <NavLink className='nav-link' to='/movies' onClick={closeMenu} >
                             <h3 className="nav-btn">Movies</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/livetv'  onClick={() => setMenuOpen(!menuOpen)}>
+                        <NavLink className='nav-link' to='/livetv'  onClick={closeMenu}>
                             <h3 className="nav-btn">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/liveglobe'  onClick={() => setMenuOpen(!menuOpen)}>
+                        <NavLink className='nav-link' to='/liveglobe'  onClick={closeMenu}>
                             <h3 className="nav-btn">Globe</h3>
                         </NavLink>
                     </NavItem>
                     {currentUser && (
                     <NavItem>
-                        <NavLink className='nav-link' to='/favorites'  onClick={() => setMenuOpen(!menuOpen)}>
+                        <NavLink className='nav-link' to='/favorites'  onClick={closeMenu}>
                             <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
 
                         </NavLink>
                     </NavItem>
                     )}
-                    <NavItem  onClick={() => setMenuOpen(!menuOpen)}>
+                    <NavItem   onClick={closeMenu}>
                             <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode} >Light</h3>
                     </NavItem>
                 </Nav>
@@ -75,9 +79,11 @@ const Header = () => {
                 <img className="lamp1" src={lightMode ? lampOff : lamp} alt="Light Mode lamp toggle" onClick={toggleLightMode} />
             <div className="favrites-icon-main">
                 {currentUser && (
-                    <Link to={`/favorites`}>
+                    <Link to={`/favorites`} className="favorites-link">
                         <img className="couch" src={couch} alt="favorites icon" />
-                        <div className="favorites-count">{favoritesCount}</div>
+                        <div className="favorites-count">
+                          {favoritesCount}
+                            </div>
                     </Link>
                 )}
             </div>
