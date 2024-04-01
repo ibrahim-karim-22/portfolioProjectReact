@@ -12,13 +12,15 @@
   font-size: 11px 0.3s ease;
   border: 2px black solid;
   border-radius: 3px;
-  background-color: red;
+  background-color: rgba(255, 78, 246, 0.501);
   border-width: 2px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 1); 
+  border-radius: 22px;
+  padding: 7px;
   
 }
 .nav-btn:hover {
-  color: rgb(255, 0, 0);
+  color: rgb(255, 225, 0);
   transform: rotate(1deg);
 }
 
