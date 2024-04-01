@@ -90,18 +90,20 @@ const handleChannelClick = (channel) => {
             </Row>
             <Row>
                 <Col>
-                    <div className="video-player-section mt-5">
+                    <div className="video-player-section">
                         <h2 className='channels-text'>{selectedGlobeChannel.name}</h2>
                         <div className='channel-display-globe'>
+                            <div className='video-container'>
                             <iframe
-                                width="760"
-                                height="427"
+                                width="100%"
+                                height="auto"
                                 src={selectedGlobeChannel.channel}
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
                             ></iframe>
+                            </div>
                         </div>
                     </div>
                 </Col>

@@ -37,8 +37,8 @@ const UserLoginForm = () => {
         <>
             <span className="navbar-text ml-auto">
                 {currentUser ? (
-                    <div style={{ display: "flex", alignItems: "center", color: 'black', fontSize: '22px' }}>
-                        <span style={{ marginRight: "10px" }}>{currentUser.username}</span>
+                    <div className="logout-btn" >
+                        <span className="username-span">{currentUser.username}</span>
                         <Button outline onClick={handleLogout}>
                            LOGOUT
                         </Button>
@@ -47,9 +47,11 @@ const UserLoginForm = () => {
                     <Button
                         outline
                         onClick={() => setLoginModalOpen(true)}
-                        style={{ color: "white", border: "none", padding: "0" }}
+                        className="login-btn mt-2"
+                        style={{border: 'none'}}
                     >
                        <img className="tv" src={login} alt="Login Button" />
+                       <h3 className="login-text">LOGIN</h3>
                     </Button>
                 )}
             </span>

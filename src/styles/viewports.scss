@@ -6,25 +6,39 @@
 
 
 @media only screen and (min-width: 1400px) {
-.nav-btn-fave {
+.nav-btn-fave,
+.login-text
+{
     display: none;
 }
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
     .couch,
+    .favorites-count,
     .lamp1,
-    .favorites-count  {
+    .tv
+      {
         display: none;
      
     }
 }
 
-@media only screen and (max-width: 600px) {
+// @media only screen and (min-width: 1000px) {
 
-    .tv {
-        transform: scale(55%);;
+//     .tv {
+//         display: block;
+//     }
+// }
+
+@media only screen and (min-width: 1400px) {
+
+    .tv,
+    .lamp1,
+    .couch,
+    .favorites-count {
+        display: block;
     }
 }
 
@@ -35,11 +49,71 @@
         
     }
 }
-@media only screen and (max-width: 700px) {
+@media (min-width: 1240px) {
+    .phone-container {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .city-name {
+      font-size: 10px;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .scroll-arrows {
+        top: 14%; 
+        scale: .5;
+        transform: translateX(1222%); 
+        width: 11%; 
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .tv-guide-section {
+       margin-bottom: -50%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .tv-guide-section {
+       margin-bottom: -22%;
+    }
+  }
+  @media only screen and (max-width: 1000px) {
+    .movies-display-poster {
+      width: 150px;
+    }
+  }
 
-    .display-movie {
-        transform: scale(.5);
-        translate: -12rem -8rem;
+
+//   @media only screen and (max-width: 1400px) {
+//     .video-player-section {
+//        scale: .3; 
+//     }
+//   }
+
+//   @media only screen and (max-width: 1400px) {
+//     .video-player-section {
+//        scale: .3; 
+//     }
+//   }
+// @media only screen and (max-width: 700px) {
+
+//     .display-movie {
+//         transform: scale(.5);
+//         translate: -12rem -8rem;
         
+//     }
+// }
+
+@media only screen and (min-width: 800px) {
+
+    .phone-play-icon {
+       scale: 3;
+    }
+}
+@media only screen and (min-width: 800px) {
+
+
+    .phone-favorite-icon {
+       scale: 2;
     }
 }

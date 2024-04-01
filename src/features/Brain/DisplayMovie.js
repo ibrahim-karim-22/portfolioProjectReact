@@ -23,7 +23,7 @@ const DisplayMovie = () => {
             </Row>
             <Row>
                 <Col>
-                    <video className='display-movie' width="750" height="510" controls>
+                    <video className='display-movie' width="100%" height="auto" controls>
                         <source src={movie.video} type="video/mp4" />
                         Your browser does not support this video type.
                     </video>

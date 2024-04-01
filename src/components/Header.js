@@ -19,6 +19,7 @@ const Header = () => {
     const currentUser = useSelector((state) => state.user.currentUser);
     const favoritesCount = useSelector((state) => state.favorites.faveList.length + state.favorites.faveListTV.length + state.favorites.faveListGlobe.length);
 
+
     const toggleLightMode = () => {
         setLightMode(prevMode => !prevMode);
     };
@@ -37,41 +38,36 @@ const Header = () => {
             <Collapse isOpen={menuOpen} navbar>
                 <UserLoginForm />
                 <Nav navbar>
-                    
                     <NavItem>
-                        <NavLink className='nav-link' to='/'>
+                        <NavLink className='nav-link' to='/' onClick={() => setMenuOpen(!menuOpen)}>
                             <h3 className="nav-btn">Home</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/movies'>
+                        <NavLink className='nav-link' to='/movies'  onClick={() => setMenuOpen(!menuOpen)}>
                             <h3 className="nav-btn">Movies</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/livetv'>
+                        <NavLink className='nav-link' to='/livetv'  onClick={() => setMenuOpen(!menuOpen)}>
                             <h3 className="nav-btn">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/liveglobe'>
+                        <NavLink className='nav-link' to='/liveglobe'  onClick={() => setMenuOpen(!menuOpen)}>
                             <h3 className="nav-btn">Globe</h3>
                         </NavLink>
                     </NavItem>
                     {currentUser && (
                     <NavItem>
-                        <NavLink className='nav-link' to='/favorites'>
+                        <NavLink className='nav-link' to='/favorites'  onClick={() => setMenuOpen(!menuOpen)}>
                             <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
 
                         </NavLink>
                     </NavItem>
                     )}
-                            <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode}>Light</h3>
-                    <NavItem>
-                    
-                    <NavItem>
-                    </NavItem>
-
+                    <NavItem  onClick={() => setMenuOpen(!menuOpen)}>
+                            <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode} >Light</h3>
                     </NavItem>
                 </Nav>
             </Collapse>

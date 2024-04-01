@@ -93,18 +93,20 @@ const DisplayTV = () => {
             </Row>
             <Row>
                 <Col>
-                    <div className="video-player-section mt-5">
+                    <div className="video-player-section">
                         <h2 className='channels-text'>{selectedChannel.name}</h2>
                         <div className='channel-display'>
+                            <div className='video-container'>
                             <iframe
-                                width="560"
-                                height="315"
+                                width="100%"
+                                height="auto"
                                 src={selectedChannel.channel}
                                 title="YouTube video player"
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowFullScreen
                             ></iframe>
+                            </div>
                         </div>
                     </div>
                 </Col>

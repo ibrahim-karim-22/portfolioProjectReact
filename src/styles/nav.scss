@@ -1,7 +1,8 @@
 .nav-bar-main {
   margin: 22px;
 }
-.nav-btn {
+.nav-btn,
+.login-text {
   color: rgb(255, 255, 255);
   transition: color 0.3s ease;
   font-family: "Michroma", sans-serif;
@@ -19,5 +20,29 @@
 .nav-btn:hover {
   color: rgb(255, 0, 0);
   transform: rotate(1deg);
+}
+
+.login-text {
+  font-size: 22px;
+  background-color: blue;
+
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 33px;
+  text-shadow: black 2px 2px 2px;
+}
+.login-btn {
+  color: white;
+  border: none;
+  padding: 0px;
+}
+
+.username-span {
+  margin-right: 10px;
+  font-family: "Caveat", cursive;
 }
 
