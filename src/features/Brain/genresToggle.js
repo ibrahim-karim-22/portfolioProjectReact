@@ -21,10 +21,10 @@ function Genre({ onSelectGenre, category }) {
 
   return (
     <Dropdown isOpen={dropdownOpen} toggle={toggle}>
-      <DropdownToggle caret size="md" className="mt-5 mb-5">
+      <DropdownToggle caret size="md" className="mt-5 mb-3 bg-danger text-black">
         {genreTitle}
       </DropdownToggle>
-      <DropdownMenu>
+      <DropdownMenu className='bg-info'>
         {selectedGenres.map(genre => (
           <DropdownItem key={genre} onClick={() => handleGenreSelection(genre)}>
             {genre}

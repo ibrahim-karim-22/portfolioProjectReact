@@ -26,7 +26,7 @@ const Header = () => {
     const closeMenu = () => {
         setMenuOpen(false);
     };
-    
+
 
     useEffect(() => {
         const body = document.body;
@@ -43,7 +43,7 @@ const Header = () => {
                 <UserLoginForm />
                 <Nav navbar>
                     <NavItem>
-                        <NavLink className='nav-link' to='/'  onClick={closeMenu}>
+                        <NavLink className='nav-link' to='/' onClick={closeMenu}>
                             <h3 className="nav-btn">Home</h3>
                         </NavLink>
                     </NavItem>
@@ -53,41 +53,41 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/livetv'  onClick={closeMenu}>
+                        <NavLink className='nav-link' to='/livetv' onClick={closeMenu}>
                             <h3 className="nav-btn">TV</h3>
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='/liveglobe'  onClick={closeMenu}>
+                        <NavLink className='nav-link' to='/liveglobe' onClick={closeMenu}>
                             <h3 className="nav-btn">Globe</h3>
                         </NavLink>
                     </NavItem>
                     {currentUser && (
-                    <NavItem>
-                        <NavLink className='nav-link' to='/favorites'  onClick={closeMenu}>
-                            <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
+                        <NavItem>
+                            <NavLink className='nav-link' to='/favorites' onClick={closeMenu}>
+                                <h3 className="nav-btn-fave nav-btn">Favorites {favoritesCount}</h3>
 
-                        </NavLink>
-                    </NavItem>
+                            </NavLink>
+                        </NavItem>
                     )}
-                    <NavItem   onClick={closeMenu}>
-                            <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode} >Light</h3>
+                    <NavItem onClick={closeMenu}>
+                        <h3 className="nav-btn-fave nav-btn" onClick={toggleLightMode} >Light</h3>
                     </NavItem>
                 </Nav>
             </Collapse>
-          
-                <img className="lamp1" src={lightMode ? lampOff : lamp} alt="Light Mode lamp toggle" onClick={toggleLightMode} />
+
+            <img className="lamp1" src={lightMode ? lampOff : lamp} alt="Light Mode lamp toggle" onClick={toggleLightMode} />
             <div className="favrites-icon-main">
                 {currentUser && (
                     <Link to={`/favorites`} className="favorites-link">
                         <img className="couch" src={couch} alt="favorites icon" />
                         <div className="favorites-count">
-                          {favoritesCount}
-                            </div>
+                            {favoritesCount}
+                        </div>
                     </Link>
                 )}
             </div>
-           
+
         </Navbar>
     )
 }

@@ -93,12 +93,23 @@
 }
 
 .featured-text {
-  color: rgb(255, 145, 239);
+  color: gold;
   font-size: 122px;
   font-family: "Luckiest Guy", cursive;
   margin-top: 100px;
   text-shadow: black 2px 2px 2px;
   text-align: center;
+ 
+
+}
+.featured-text-channels {
+  color: gold;
+  font-size: 122px;
+  font-family: "Luckiest Guy", cursive;
+  margin-top: 55%;
+  text-shadow: black 2px 2px 2px;
+  text-align: center;
+  margin-bottom: -2%;
  
 
 }
@@ -223,10 +234,10 @@
 }
 
 .featured-header {
-  color: rgb(255, 255, 255);
+  color: gold;
   font-size: 77px;
   font-family: "Luckiest Guy", cursive;
-  margin-top: 111px;
+  margin-top: -22px;
   text-shadow: black 2px 2px 2px;
   text-align: center;
   
@@ -238,7 +249,7 @@ display: block;
 height: auto;
 margin-top: 33px;
 margin-bottom: -28%;
-padding: 44%;
+padding: 46%;
 }
 
 .cin1-par {
@@ -258,21 +269,35 @@ padding: 44%;
     overflow: hidden;
     scale: 1;
   }
+  .mov1-par {
+    position: relative;
+    overflow: hidden;
+    scale: 1;
+    margin-top: -33%;
+   
+  
+  }
   .mov1 {
     width: 100%;
     display: block;
     height: auto;
     padding: 47%;
     }
+    .mov2 {
+      width: 100%;
+      display: block;
+      height: auto;
+      padding: 47%;
+      margin-top: -55%;
+      }
+      .mov3 {
+        width: 100%;
+        display: block;
+        height: auto;
+        padding: 47%;
+        margin-top: -55%;
+        }
     
-    .mov1-par {
-      position: relative;
-      overflow: hidden;
-      scale: 1;
-      margin-top: -33%;
-     
-    
-    }
     .channel1 {
       width: 100%;
       display: block;
@@ -287,5 +312,48 @@ padding: 44%;
         margin-top: -11%;
       
       }
+
+      .vase {
+        width: 100%;
+        display: block;
+        height: auto;
+        padding: 47%;
+        margin-top: 1%;
+        
+     
+      }
+      .vase-par {
+        position: relative;
+        overflow: hidden;
+        scale: .5;
+      }
+      .coutntries-par {
+        position: relative;
+        overflow: hidden;
+      }
+      .couch2 {
+        width: 100%;
+        display: block;
+        height: auto;
+        padding: 45%;
+        }
+        
+        .couch2-par {
+          position: relative;
+          overflow: hidden;
+          scale: 1;
+          margin-top: -50%;
+        }
+        .von {
+          margin-bottom: 33%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          border: 1px solid black;
+          padding: 2px;
+          border-radius: 22px;
+          background-color: rgb(0, 0, 0);
+        }
+ 
       
     

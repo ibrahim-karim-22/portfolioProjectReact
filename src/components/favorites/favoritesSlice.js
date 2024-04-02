@@ -13,16 +13,15 @@ const favoritesSlice = createSlice({
             let newItem = { ...item };
 
             if (type === 'movie') {
-                state.faveList = [...state.faveList, newItem]; 
+                state.faveList = [...state.faveList, newItem];
             } else if (type === 'tvChannel') {
-                state.faveListTV = [...state.faveListTV, newItem]; 
+                state.faveListTV = [...state.faveListTV, newItem];
             } else if (type === 'globe') {
                 state.faveListGlobe = [...state.faveListGlobe, newItem];
             }
         },
         removeFromFavorites(state, action) {
             const { item, type } = action.payload;
-            // let newItem = { ...item };
 
             if (type === 'movie') {
                 state.faveList = state.faveList.filter(movie => movie.id !== item.id);

@@ -21,8 +21,8 @@ export const Channels = [
         genre: ['Documentary', 'Educational'],
         poster: "https://media.licdn.com/dms/image/D4E12AQE5bMMVk0I62A/article-cover_image-shrink_720_1280/0/1709219077272?e=2147483647&v=beta&t=axFt-qXYgPn4wzCHIKTzdIfuKyl3S3z58-LdgpA-GPo",
         channel: "https://www.youtube.com/embed/O6Qdxrf-6CM?si=lAu0KEQs23H_e0E5&autoplay=1&mute=1"
-          
-        
+
+
     },
     {
         id: 3,
@@ -39,8 +39,8 @@ export const Channels = [
         genre: ['Animation', 'Entertainment', 'Adventure'],
         poster: "https://qph.cf2.quoracdn.net/main-qimg-6c647dcd9e1c9118ee7effd074369300",
         channel: "https://www.youtube.com/embed/Fjp2TdlTTIU?si=4i-PG9raF8nGv6O1&autoplay=1&mute=1"
-        
-        
+
+
     },
     {
         id: 4,
@@ -74,7 +74,7 @@ export const Channels = [
     {
         id: 6,
         language: ['English'],
-        name: 'National Geographic',
+        name: 'Disney',
         description: `Disney Channel is a TV network for kids and teens owned by Disney. It shows cartoons, live-action series, 
                     and movies that are fun and family-friendly. It's known for popular shows like "Hannah Montana" and "High School Musical."`,
         genre: ['Animation', 'Entertainment', 'Adventure'],

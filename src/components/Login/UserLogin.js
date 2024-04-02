@@ -43,8 +43,8 @@ const UserLoginForm = () => {
                 {currentUser ? (
                     <div className="logout-btn text-danger" >
                         <span className="username-span me-3">{currentUser.username}</span>
-                        <Button onClick={handleLogout}  className="bg-danger me-5">
-                           LOGOUT
+                        <Button onClick={handleLogout} className="bg-danger me-5">
+                            LOGOUT
                         </Button>
                     </div>
                 ) : (
@@ -52,10 +52,10 @@ const UserLoginForm = () => {
                         outline
                         onClick={() => setLoginModalOpen(true)}
                         className="login-btn mt-2"
-                        style={{border: 'none'}}
+                        style={{ border: 'none' }}
                     >
-                       <img className="tv" src={login} alt="Login Button" />
-                       <h3 className="login-text">LOGIN</h3>
+                        <img className="tv" src={login} alt="Login Button" />
+                        <h3 className="login-text">LOGIN</h3>
                     </Button>
                 )}
             </span>

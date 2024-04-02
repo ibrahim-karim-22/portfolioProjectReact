@@ -12,12 +12,11 @@ import Movies from "./pages/Movies";
 import DisplayMovie from "./features/Brain/DisplayMovie";
 import FavoritesPage from "./pages/FavoritesPage";
 import DisplayGlobe from "./features/Brain/DisplayGlobe";
-import { ScrollRestoration } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-    
+
     <Router>
       <div className="App">
         <Header />

@@ -32,7 +32,7 @@ const ChannelsList = () => {
 
     return (
         <Container>
-            
+
             <Row>
                 <Genre onSelectGenre={setSelectedGenre} category="TV" />
             </Row>
@@ -53,7 +53,7 @@ const ChannelsList = () => {
                                 <div className='city-name mb-5'>{channel.name}</div>
                                 {currentUser && (
                                     <div className='favorite-icon-channels' onClick={() => handleFavoriteClick(channel, 'tvChannel')}>
-                                        <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white'}} />
+                                        <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white' }} />
                                     </div>
                                 )}
                             </div>

@@ -22,10 +22,6 @@ const FavoritesPage = () => {
 
     const userName = currentUser ? currentUser.username : '';
 
-    //    if (!currentUser) { 
-    //     return redirect("/");
-    //    }
-
     return (
         <Container>
             {!hasFavorites && (
@@ -88,7 +84,7 @@ const FavoritesPage = () => {
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
                                     <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')}>
-                                        <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red'}} />
+                                        <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
                                 </div>
                             ))}

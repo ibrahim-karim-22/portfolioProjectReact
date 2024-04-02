@@ -10,8 +10,6 @@
   scroll-behavior: smooth;
 }
 
-
-
 .tv-guide-scrollable-container > * {
   transition: transform 0.03s ease;
   flex: 0 0 auto;
@@ -22,10 +20,7 @@
 
 .tv-guide-scrollable-container > *:hover {
   transform: scale(1.05);
-  
 }
-
-
 
 .channel-display {
   display: block;

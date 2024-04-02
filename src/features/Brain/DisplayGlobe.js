@@ -90,7 +90,7 @@ const handleChannelClick = (channel) => {
             </Row>
             <Row>
                 <Col>
-                <Card className='card-main bg-black'>
+                <Card className='card-main bg-black mt-5'>
                     <CardBody>
                         <CardTitle tag='h1' className='text-warning'>
                         {selectedGlobeChannel.name}

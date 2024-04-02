@@ -48,7 +48,7 @@ const LiveGlobe = () => {
                                     </div>
                                     <div className='globe-overlay'></div>
                                 </Link>
-                                    <div className='city-name mb-3'>{channel.name}</div>
+                                <div className='city-name mb-3'>{channel.name}</div>
                                 {currentUser && (
                                     <div className='favorite-icon-globe' onClick={() => handleFavoriteClick(channel, 'globe')}>
                                         <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel.id) ? 'yellow' : 'white' }} />
