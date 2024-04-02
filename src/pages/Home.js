@@ -94,7 +94,7 @@ const Homepage = () => {
               <img src={movie2.poster} alt={movie2.name} className='mov2' />
             </Link>
           </Parallax>
-          <Parallax scale={[1, 15]} rotate={[3, -3]} translateX={[55, -33]}>
+          <Parallax scale={[1, 12]} rotate={[3, -3]} translateX={[55, -33]}>
             <Link to={`/movie/${movie3.id}`}>
               <img src={movie3.poster} alt={movie3.name} className='mov3' />
             </Link>
