@@ -19,29 +19,29 @@ const FavoritesPage = () => {
     const handleRemoveFavorite = (item, type) => {
         dispatch(removeFromFavorites({ item, type }));
     };
-    
-   const userName = currentUser ? currentUser.username : '';
 
-//    if (!currentUser) { 
-//     return redirect("/");
-//    }
+    const userName = currentUser ? currentUser.username : '';
+
+    //    if (!currentUser) { 
+    //     return redirect("/");
+    //    }
 
     return (
         <Container>
-           {!hasFavorites && (
-           <Alert className='mt-5 bg-warning text-dark'>
-           <h4 className="alert-heading">
-             {userName}! Welcome to Favorites!
-           </h4>
-           <p>
-            Currently you haven't added anything.
-           </p>
-           <hr />
-           <p className="mb-0">
-                Click the on the <FontAwesomeIcon icon={faStar} style={{color: 'gray'}} /> to favorite!
-           </p>
-         </Alert>
-           )}
+            {!hasFavorites && (
+                <Alert className='mt-5 bg-warning text-dark'>
+                    <h4 className="alert-heading">
+                        {userName}! Welcome to Favorites!
+                    </h4>
+                    <p>
+                        Currently you haven't added anything.
+                    </p>
+                    <hr />
+                    <p className="mb-0">
+                        Click the on the <FontAwesomeIcon icon={faStar} style={{ color: 'gray' }} /> to favorite!
+                    </p>
+                </Alert>
+            )}
             {favoriteMovies.length > 0 && (
                 <Row>
                     <Col>
@@ -86,6 +86,9 @@ const FavoritesPage = () => {
                                     </Link>
                                     <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')} className='remove-favorite-button'>
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
+                                    </div>
+                                    <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')}>
+                                        <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red'}} />
                                     </div>
                                 </div>
                             ))}

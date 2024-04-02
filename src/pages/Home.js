@@ -10,6 +10,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Parallax } from 'react-scroll-parallax';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
+import cin1 from '../app/assets/images/cin1.png'
 
 // import anime from 'animejs';
 
@@ -52,235 +53,64 @@ const Homepage = () => {
   return (
     <>
       <ParallaxProvider>
-        <div className='featured-container'>
-          <div className='featmov-text'>
-            <Parallax scale={[.1, 1.5]} >
-              <h1 className='featured-text'>Featured</h1>
-            </Parallax>
+        <div className='cin1-par'>
+        <Parallax  y={[0, -100]} scale={[1, 7]} rotate={[.5, 777]} translateX={[-100, 50]}>
+          <div>
+            <img src={cin1} alt='cinamon roll' className='cin1'/>
           </div>
-          <div className="featmov">
-            <div className="featured-movie-container1">
-              <Parallax scale={[1, 4]} rotate={[0, -7]}>
-                <Link to={`/movie/${movie1.id}`}>
-                  <img src={movie1.poster} alt={movie1.name} className='featured-movie-poster1' />
-                </Link>
-              </Parallax>
-            </div>
-            <div className="featured-movie-container2">
-              <Parallax scale={[1, 3]} >
-                <Link to={`/movie/${movie2.id}`}>
-                  <img src={movie2.poster} alt={movie2.name} className='featured-movie-poster2' />
-                </Link>
-              </Parallax>
-            </div>
-
-            <div className="featured-movie-container3">
-              <Parallax scale={[1, 4]} rotate={[1, 4]}>
-                <Link to={`/movie/${movie3.id}`}>
-                  <img src={movie3.poster} alt={movie3.name} className='featured-movie-poster3' />
-                </Link>
-              </Parallax>
-            </div>
-          </div>
-
-
-          <div className='featchannel-text'>
-            <Parallax scale={[.1, 1.5]}>
-              <h1 className='featured-text'>Top Channels</h1>
-            </Parallax>
-          </div>
-          <div className="featchannel">
-            <div className="featured-channel-container1 me-5">
-              <Parallax scale={[1, 4]} rotate={[0, -11]}>
-                <Link to={`/livetv/${channel1.id}`}>
-                  <img src={channel1.poster} alt={channel1.name} className='featured-channel-poster1' />
-                </Link>
-              </Parallax>
-            </div>
-            <div className="featured-channel-container2 me-5">
-              <Parallax scale={[1, 4]} >
-                <Link to={`/livetv/${channel2.id}`}>
-                  <img src={channel2.poster} alt={channel2.name} className='featured-channel-poster2' />
-                </Link>
-              </Parallax>
-            </div>
-
-            <div className="featured-channel-container3">
-              <Parallax scale={[1, 4]} rotate={[1, 11]} >
-                <Link to={`/livetv/${channel3.id}`}>
-                  <img src={channel3.poster} alt={channel3.name} className='featured-channel-poster3' />
-                </Link>
-              </Parallax>
-            </div>
-          </div>
-
-
-          <div className='featchannel-text'>
-            <Parallax scale={[.1, 1.5]}>
-              <h1 className='featured-text'>Countries to Visit</h1>
-            </Parallax>
-          </div>
-          <div className="featchannel">
-            <div className="featured-channel-container1 me-5">
-              <Parallax scale={[1, 4]} rotate={[0, -11]}>
-                <Link to={`/liveglobe/${globe1.id}`}>
-                  <img src={globe1.poster} alt={globe1.name} className='featured-channel-poster1' />
-                </Link>
-              </Parallax>
-            </div>
-            <div className="featured-channel-container2 me-5">
-              <Parallax scale={[1, 4]} >
-                <Link to={`/liveglobe/${globe2.id}`}>
-                  <img src={globe2.poster} alt={globe2.name} className='featured-channel-poster2' />
-                </Link>
-              </Parallax>
-            </div>
-
-            <div className="featured-channel-container3">
-              <Parallax scale={[1, 4]} >
-                <Link to={`/liveglobe/${globe3.id}`}>
-                  <img src={globe3.poster} alt={globe3.name} className='featured-channel-poster3' />
-                </Link>
-              </Parallax>
-            </div>
-          </div>
+        </Parallax>
         </div>
-      </ParallaxProvider>
-      <Container className='phone-container'>
-        <Row>
-          <Col>
-            <h2 className='featured-header mt-3'>Featured</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/movie/${movie1.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={movie1.poster} alt={movie1.name} className='phone-poster-size' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
+          <div className='cin2-par'>
+        <Parallax  y={[0, -50]} scale={[1, 22]} rotate={[.5, 777]} translateY={[20, -30]}>
+          <div>
+            <img src={cin1} alt='cinamon roll' className='cin2'/>
+          </div>
+        </Parallax>
+        </div>
+        <div className='featmov-text'>
+            <Parallax scale={[.1, 1.5]}  translateX={[-44, 33]}>
+              <h1 className='featured-text mb-5'>Featured</h1>
+            </Parallax>
+          </div>
+        <div className='mov1-par'>
+              <Parallax scale={[1, 10]} rotate={[3, -3]} translateX={[55, -33]}>
+                <Link to={`/movie/${movie1.id}`}>
+                  <img src={movie1.poster} alt={movie1.name} className='mov1' />
                 </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(movie1, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie1.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/movie/${movie2.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={movie2.poster} alt={movie2.name} className='phone-poster-size' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
+              </Parallax>
+              <Parallax scale={[1, 10]} rotate={[3, -3]} translateX={[-44, 33]}>
+                <Link to={`/movie/${movie2.id}`}>
+                  <img src={movie2.poster} alt={movie2.name} className='mov1' />
                 </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(movie2, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie2.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/movie/${movie3.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={movie3.poster} alt={movie3.name} className='phone-poster-size' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
+              </Parallax>
+              <Parallax scale={[1, 10]} rotate={[3, -3]} translateX={[55, -33]}>
+                <Link to={`/movie/${movie3.id}`}>
+                  <img src={movie3.poster} alt={movie3.name} className='mov1' />
                 </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(movie3, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(movie3.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <h2 className='featured-header mt-3'>Top Channels</h2>
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/livetv/${channel1.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={channel1.poster} alt={channel1.name} className='phone-poster-size-channels' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
+              </Parallax>
+         </div>
+         <div className='featmov-text'>
+            <Parallax scale={[.1, 1.5]}  translateX={[-44, 33]}>
+              <h1 className='featured-text mb-5'>Top Channels</h1>
+            </Parallax>
+          </div>
+         <div className='channel1-par'>
+         <Parallax scale={[1, 3]} rotate={[-3, 3]} >
+                <Link to={`/livetv/${channel3.id}`}>
+                  <img src={channel3.poster} alt={channel3.name} className='channel1' />
                 </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(channel1, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel1.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/livetv/${channel2.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={channel2.poster} alt={channel2.name} className='phone-poster-size-channels' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
+              </Parallax>
+              <Parallax scale={[1, 3]} rotate={[-3, 3]} >
+                <Link to={`/livetv/${channel2.id}`}>
+                  <img src={channel2.poster} alt={channel2.name} className='channel1' />
                 </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(channel2, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel2.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-          <Col>
-            <div className='phone-img-container'>
-              <div className='phone-img-item'>
-                <Link to={`/livetv/${channel3.id}`} className='phone-link'>
-                  <div className='phone-poster-wrapper'>
-                    <img src={channel3.poster} alt={channel3.name} className='phone-poster-size-channels' />
-                    <div className='phone-play-wrapper'>
-                      <FontAwesomeIcon icon={faPlayCircle} className='phone-play-icon' />
-                    </div>
-                  </div>
-                  <div className='phone-overlay'></div>
-                </Link>
-                {currentUser && (
-                  <div className='phone-favorite-icon' onClick={() => handleFavoriteClick(channel3, 'movie')}>
-                    <FontAwesomeIcon icon={faStar} style={{ color: isFavorite(channel3.id) ? 'yellow' : 'white' }} />
-                  </div>
-                )}
-              </div>
-            </div>
-          </Col>
-        </Row>
+              </Parallax>
+         </div>
+
+
+         <div className='countries-par'>
+            <Parallax y={[-33, 33]} scale={[.5, 2.2]}>
+         <Container>
         <Row>
           <Col>
             <h2 className='featured-header mt-3'>Locations To Visit</h2>
@@ -308,6 +138,7 @@ const Homepage = () => {
             </div>
           </Col>
           <Col>
+        
             <div className='phone-img-container'>
               <div className='phone-img-item'>
                 <Link to={`/liveglobe/${globe2.id}`} className='phone-link'>
@@ -348,10 +179,14 @@ const Homepage = () => {
             </div>
           </Col>
         </Row>
+        
       </Container>
+</Parallax>
+          </div>
+      </ParallaxProvider>
     </>
 
-  );
+);
 };
 
 export default Homepage;

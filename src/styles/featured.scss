@@ -14,7 +14,9 @@
   align-items: center; 
   height: auto; 
   margin: 0; 
-  margin-top: 22%;
+  margin-top: -2%;
+  margin-bottom: 22px;
+  
 }
 .featchannel {
   display: flex;
@@ -91,12 +93,13 @@
 }
 
 .featured-text {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 145, 239);
   font-size: 122px;
   font-family: "Luckiest Guy", cursive;
   margin-top: 100px;
   text-shadow: black 2px 2px 2px;
   text-align: center;
+ 
 
 }
 
@@ -221,13 +224,68 @@
 
 .featured-header {
   color: rgb(255, 255, 255);
-  font-size: 33px;
+  font-size: 77px;
   font-family: "Luckiest Guy", cursive;
   margin-top: 111px;
   text-shadow: black 2px 2px 2px;
   text-align: center;
-  border: rgb(230, 166, 166) 1px solid;
-  border-radius: 22px;
-  background-color: rgba(198, 133, 194, 0.4);
+  
 }
 
+.cin1 {
+width: 100%;
+display: block;
+height: auto;
+margin-top: 33px;
+margin-bottom: -28%;
+padding: 44%;
+}
+
+.cin1-par {
+  position: relative;
+  overflow: hidden;
+  scale: 1;
+}
+.cin2 {
+  width: 100%;
+  display: block;
+  height: auto;
+  padding: 45%;
+  }
+  
+  .cin2-par {
+    position: relative;
+    overflow: hidden;
+    scale: 1;
+  }
+  .mov1 {
+    width: 100%;
+    display: block;
+    height: auto;
+    padding: 47%;
+    }
+    
+    .mov1-par {
+      position: relative;
+      overflow: hidden;
+      scale: 1;
+      margin-top: -33%;
+     
+    
+    }
+    .channel1 {
+      width: 100%;
+      display: block;
+      height: auto;
+      padding: 39%;
+      }
+      
+      .channel1-par {
+        position: relative;
+        overflow: hidden;
+        scale: 1;
+        margin-top: -11%;
+      
+      }
+      
+    

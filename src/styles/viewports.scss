@@ -49,11 +49,11 @@
         
     }
 }
-@media (min-width: 1240px) {
-    .phone-container {
-      display: none;
-    }
-  }
+// @media (min-width: 1240px) {
+//     .phone-container {
+//       display: none;
+//     }
+//   }
   @media only screen and (max-width: 1000px) {
     .city-name {
       font-size: 10px;
@@ -180,4 +180,16 @@
   }
 }
 
+@media only screen and (max-width: 1000px) {
+  .featured-header,
+  .featured-text {
+    font-size: 33px;
+  }
+}
 
+
+@media only screen and (max-width: 1000px) {
+  .countries-par {
+   scale: .69;
+  }
+}
