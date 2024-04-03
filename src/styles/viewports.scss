@@ -191,6 +191,14 @@
   }
 }
 @media (max-width: 768px) {
+  
+  .movies-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+}
+@media (max-width: 768px) {
   .tv-guide-scrollable-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2px;
