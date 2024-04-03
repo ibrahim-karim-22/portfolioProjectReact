@@ -1,6 +1,6 @@
 @media only screen and (max-width: 600px) {
   .title-img {
-    transform: scale(44%);
+    transform: scale(89%);
   }
 }
 
@@ -121,20 +121,20 @@
     scale: 0.4;
   }
 }
-@media only screen and (max-width: 1000px) {
-  .favorite-icon-channels,
-  .favorite-icon-globe,
-  .favorite-icon {
-    scale: 0.4;
-  }
-}
+// @media only screen and (max-width: 1000px) {
+//   .favorite-icon-channels,
+//   .favorite-icon-globe,
+//   .favorite-icon {
+//     scale: 0.4;
+//   }
+// }
 
 @media only screen and (max-width: 1000px) {
   .favorite-icon-globe {
-    scale: 0.4;
+    scale: 0.7;
     position: absolute;
-    transform: translateX(44px);
-    top: -8%;
+    transform: translateX(6px);
+    top: 2%;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -147,18 +147,18 @@
 }
 @media only screen and (max-width: 1000px) {
   .favorite-icon {
-    scale: 0.4;
+    scale: 0.8;
     position: absolute;
-    transform: translateX(30px);
-    top: -2%;
+    transform: translateX(-4px);
+    top: 4%;
   }
 }
 @media only screen and (max-width: 1000px) {
   .favorite-icon-channels {
-    scale: 0.4;
+    scale: 0.6;
     position: absolute;
-    transform: translateX(44px);
-    top: -6%;
+    transform: translateX(16px);
+    top: .5%;
   }
 }
 
@@ -214,5 +214,12 @@
   .channel-item {
     margin: 4px;
     margin-bottom: -11%;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .phone-remove-favebtn,
+  .phone-remove-favebtn2 {
+   display: none;
   }
 }

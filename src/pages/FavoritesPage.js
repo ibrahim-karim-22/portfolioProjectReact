@@ -15,6 +15,7 @@ const FavoritesPage = () => {
     const favoriteGlobe = useSelector(state => state.favorites.faveListGlobe);
     const currentUser = useSelector(selectCurrentUser);
     const hasFavorites = favoriteMovies.length > 0 || favoriteTV.length > 0 || favoriteGlobe.length > 0;
+    
 
     const handleRemoveFavorite = (item, type) => {
         dispatch(removeFromFavorites({ item, type }));
@@ -57,8 +58,14 @@ const FavoritesPage = () => {
                                     <div onClick={() => handleRemoveFavorite(movie, 'movie')} className='remove-favorite-button'>
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
+                                        <div key={movie.id} onClick={() => handleRemoveFavorite(movie, 'movie')} className='phone-remove-favebtn2'>
+                                        <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
+                                    </div>
                                 </div>
                             ))}
+                          
+
+                         
                         </div>
                     </Col>
                 </Row>
@@ -83,7 +90,7 @@ const FavoritesPage = () => {
                                     <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')} className='remove-favorite-button'>
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
-                                    <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')}>
+                                    <div onClick={() => handleRemoveFavorite(channel, 'tvChannel')} className='phone-remove-favebtn'>
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
                                 </div>
@@ -110,6 +117,9 @@ const FavoritesPage = () => {
                                         <div className='channel-overlay'></div>
                                     </Link>
                                     <div onClick={() => handleRemoveFavorite(channel, 'globe')} className='remove-favorite-button'>
+                                        <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
+                                    </div>
+                                    <div onClick={() => handleRemoveFavorite(channel, 'movie')} className='phone-remove-favebtn'>
                                         <FontAwesomeIcon icon={faCircleMinus} style={{ color: 'red' }} />
                                     </div>
                                 </div>
